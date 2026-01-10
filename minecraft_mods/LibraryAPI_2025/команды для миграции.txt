@@ -1,0 +1,8 @@
+# Создание миграции
+dotnet ef migrations add NameOfMigration --project ../DAL --startup-project .
+
+# Применение миграции
+dotnet ef database update --project ../DAL --startup-project .
+
+# Удаление последней миграции
+dotnet ef migrations remove --project ../DAL --startup-project .

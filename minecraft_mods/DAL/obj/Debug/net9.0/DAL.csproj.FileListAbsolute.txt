@@ -1,0 +1,268 @@
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/bin/Debug/net9.0/DAL.deps.json
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/bin/Debug/net9.0/DAL.dll
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/bin/Debug/net9.0/DAL.pdb
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/bin/Debug/net9.0/DTO.dll
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/bin/Debug/net9.0/DTO.pdb
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.csproj.AssemblyReference.cache
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.AssemblyInfoInputs.cache
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.AssemblyInfo.cs
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.csproj.CoreCompileInputs.cache
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.csproj.Up2Date
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.dll
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/refint/DAL.dll
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.pdb
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/ref/DAL.dll
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/bin/Debug/net9.0/DAL.runtimeconfig.json
+/Users/nborisnboris/RiderProjects/LibraryAPI_2025/DAL/obj/Debug/net9.0/DAL.genruntimeconfig.cache
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\bin\Debug\net9.0\DAL.deps.json
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\bin\Debug\net9.0\DAL.dll
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\bin\Debug\net9.0\DAL.pdb
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\bin\Debug\net9.0\DTO.dll
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\bin\Debug\net9.0\DTO.pdb
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.dll
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\refint\DAL.dll
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.pdb
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+E:\All Files\LibraryAPI_2025\LibraryAPI_2025\DAL\obj\Debug\net9.0\ref\DAL.dll
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+E:\All Files\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\kapi\Desktop\sosal\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+E:\All Files\1111\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+E:\All Files\MinecraftRepo$\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+E:\All Files\minecraft_repos\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\kapi\Desktop\sosalNew\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\kapi\Desktop\учеба\работы\ооп\актуалочка\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods_db\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\miods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\dexal\OneDrive\Рабочий стол\minecraft_mods_html\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\user\Desktop\Новая папка (3)\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll

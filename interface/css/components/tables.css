@@ -1,0 +1,211 @@
+/* ===== ТАБЛИЦЫ ===== */
+
+.table-header
+{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.table-header p
+{
+    color: var(--text-primary);
+    font-size: 2rem;
+    padding: 1% 2%;
+    margin: 0 2% 0 2%;
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    background:
+            linear-gradient(0, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+            url("../images/crying_obsidian.png") left/20% no-repeat,
+            url("../images/crying_obsidian.png") right/20% no-repeat,
+            url("../images/obsidian.png") center/20%;
+}
+
+.table-container
+{
+    position: relative;
+    width: 75%;
+    margin: 2% auto;
+    border: 4px solid black;
+    background-color: black;
+}
+
+.mod-description-cell {
+    text-align: center;
+}
+
+.data-table
+{
+    position: relative;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+    background-color: transparent;
+}
+
+
+.data-table-header
+{
+    background: url("../images/bedrock.png");
+    background-size: 5%;
+    border-bottom: 4px solid black;
+}
+
+
+.data-table-row
+{
+    position: relative;
+    background: 
+            linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+            url("../images/crimson_stem.png"),
+            url("../images/crimson_nylium.png");
+    background-size: 10vh;
+    z-index: 0;
+}
+
+
+.data-table-row:hover
+{
+    position: relative;
+    box-shadow: 0 0 0 3px white;
+    background: 
+            linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+            url("../images/warped_nylium.png");
+    background-size: 5%;
+    z-index: 10;
+}
+
+
+.data-table thead tr
+{
+    background: url("../images/crying_obsidian.png") center/10vh !important;
+}
+
+
+.data-table tbody tr
+{
+    position: relative;
+    background:
+            linear-gradient(0, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+            url("../images/crimson_stem.png"),
+            url("../images/crimson_nylium.png");
+    background-size: 10vh;
+    z-index: 0;
+}
+
+
+.data-table tbody tr:hover
+{
+    position: relative;
+    box-shadow: 0 0 0 3px white;
+    background:
+            linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+            url("../images/warped_nylium.png");
+    background-size: 10vh;
+    z-index: 10;
+}
+
+
+.data-table th
+{
+    background: rgba(0, 0, 0, 0.65);
+    padding: 2% 1%;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+.data-table td
+{
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    background: rgba(255, 255, 255, 0.02);
+    word-wrap: break-word;
+}
+
+
+.data-table td:nth-child(9),
+.data-table th:nth-child(9),
+.data-table th:nth-child(7),
+.data-table th:nth-child(6)
+{
+    width: 10%;
+}
+
+
+.data-table td:nth-child(3),
+.data-table td:nth-child(4),
+.data-table td:nth-child(5)
+{
+    text-align: left;
+}
+
+
+.data-table td:nth-child(2)
+{
+    text-align: left;
+    width: 20%;
+}
+
+
+/* Счетчик загрузок */
+.downloads-count
+{
+    color: var(--primary-color);
+}
+
+/* Кнопки действий */
+.action-buttons
+{
+    gap: var(--spacing-xs);
+}
+
+/* Пагинация */
+.pagination
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    border-top: 1px solid var(--border-light);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.pagination-info
+{
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.pagination-controls
+{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.pagination-page
+{
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+/* Отключенная кнопка */
+.btn-disabled
+{
+    background: var(--secondary-color);
+    color: var(--text-muted);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.btn-disabled:hover
+{
+    background: var(--secondary-color);
+    transform: none;
+}

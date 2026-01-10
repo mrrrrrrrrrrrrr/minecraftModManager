@@ -1,0 +1,46 @@
+/* ===== СБРОС СТИЛЕЙ ===== */
+*
+{
+    margin: 0;
+    padding: 0;
+    cursor: none !important;
+    font-family: "Minecraft";
+}
+
+/* Базовые настройки body без стилизации */
+body
+{
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: pixelated;
+    font-feature-settings: "kern" 0;
+    min-height: 100vh;
+}
+
+
+.custom-cursor 
+{
+    position: fixed;
+    width: 4vh;
+    height: 4vh;
+    background: url("../images/custom_cursor.png") center/100% no-repeat;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    mix-blend-mode: difference;
+}
+
+
+@font-face
+{
+    font-family: "Minecraft";
+    src: url("../fonts/minecraft.ttf") format("truetype");
+}
+
+
+@font-face
+{
+    font-family: "Minecraft Title";
+    src: url("../fonts/minecraft_title.ttf") format("truetype");
+}

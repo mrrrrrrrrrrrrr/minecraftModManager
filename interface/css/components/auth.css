@@ -1,0 +1,289 @@
+/* ===== ФОРМЫ АВТОРИЗАЦИИ ===== */
+
+
+.auth-center-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: calc(85vh);
+    background: 
+            linear-gradient(0deg, rgba(10, 0, 125, 0.6), rgba(0, 26, 255, 0.4)),
+            url("../images/water_still.png") center/15vh;
+    image-rendering: pixelated;
+    position: relative;
+}
+
+
+.auth-center-container::before,
+.auth-center-container::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+.auth-center-container::before
+{
+    background-image: 
+            url("../images/kelp_plant.png"),
+            url("../images/kelp_plant.png"),
+            url("../images/kelp_plant.png"),
+            url("../images/kelp_plant.png");
+    background-size: 10vh, 7vh, 12vh, 8vh;
+    background-position: 10% -18%,
+    72% -22%,
+    90% -25%,
+    28% -50%;
+    background-repeat: no-repeat;
+    filter: blur(3px) drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.3)) brightness(0.7);
+}
+
+
+.auth-center-container::after
+{
+    background-image: url("../images/kelp_plant.png"),
+    url("../images/kelp_plant.png"),
+    url("../images/kelp_plant.png"),
+    url("../images/kelp_plant.png");
+    background-size: 12vh, 9vh, 10vh, 8vh;
+    background-position: 17% -5%,
+    83% -35%,
+    1% -40%,
+    98% -30%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(15px 15px 7px rgba(0, 0, 0, 0.3));
+}
+
+
+.footer-magma
+{
+    display: block;
+    height: 100px;
+    background: 
+            linear-gradient(0deg, rgba(21, 0, 255, 0.3), rgba(21, 0, 255, 0.2)),
+            url("../images/magma.png") center/10vh;
+    image-rendering: pixelated;
+}
+
+
+.auth-center-card
+{
+    width: 100%;
+    min-height: 700px;
+    max-width: 32%;
+    padding-top: 6%;
+    padding-bottom: 7%;
+    box-shadow: 0 0 300px rgb(135, 54, 214, 0.4);
+    animation: fadeIn 0.4s ease;
+    background: 
+            url("../images/obsidian.png") repeat-x left top,
+            url("../images/obsidian.png") repeat-x left bottom,
+            url("../images/obsidian.png") repeat-y left top,
+            url("../images/obsidian.png") repeat-y right top,
+            url("../images/nether_portal.png") center;
+    background-size: 10vh;
+    image-rendering: pixelated;
+    margin-top: 4%;
+    border: 1vh solid black;
+}
+
+
+/* Центрирование контента */
+.auth-center-card,
+.auth-header,
+.auth-form h3
+{
+    text-align: center;
+}
+
+
+.auth-header
+{
+    margin-bottom: var(--spacing-xl);
+}
+
+
+.auth-header h2
+{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+
+.auth-header p
+{
+    color: var(--text-secondary);
+}
+
+
+.auth-form h3
+{
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.2rem;
+}
+
+
+.auth-form-field
+{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.auth-form-field input
+{
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    width: 61%;
+}
+
+
+.auth-form-field label
+{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+.auth-form .form-group
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+
+.auth-form label
+{
+    text-shadow: 0 2.8px 0 rgb(0, 0, 0, 0.65);
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.2rem;
+}
+
+
+.auth-form input
+{
+    max-width: 65%;
+    text-shadow: 0 3px 2px rgb(0, 0, 0, 0.65);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    background: url("../images/coral-input.png") !important;
+    background-size: 100% 100% !important;
+    image-rendering: pixelated !important;
+    box-shadow: 0 6px 0 black;
+    border-radius: 0 !important;
+    padding-top: 8% !important;
+    border: none !important;
+}
+
+
+.auth-form input:focus
+{
+    outline: none;
+}
+
+
+.auth-form input::placeholder
+{
+    font-size: 16px;
+    color: whitesmoke;
+    opacity: 50%;
+}
+
+
+.auth-button
+{
+    margin: 0 auto;
+    max-width: 65%;
+}
+
+
+.auth-enter
+{
+    font-family: "Minecraft";
+    font-size: 2rem;
+    padding: 23% 25% 8% 25%;
+    background: url("../images/coral-button.png") bottom no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    border: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 0 black;
+}
+
+
+.auth-enter:hover
+{
+    transform: scale(1.1);
+}
+
+
+.auth-links
+{
+    padding-top: 5%;
+    text-align: center;
+}
+
+
+.auth-links a
+{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+
+.auth-links a:hover
+{
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+
+.auth-footer
+{
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+}
+
+
+.auth-footer p
+{
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+
+/* Упрощенная анимация */
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

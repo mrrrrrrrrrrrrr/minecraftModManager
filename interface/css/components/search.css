@@ -1,0 +1,367 @@
+/* Система поиска */
+.search-filters-container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+/* Хедер поиска */
+.search-header {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.search-input-group {
+    position: relative;
+    flex: 1;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* Переключатель вида */
+.view-toggle {
+    display: flex;
+    background: url("../images/quartz_bricks.png") center/10vh;
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+}
+
+.view-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    color: black;
+    font-family: "Minecraft";
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.view-btn.active {
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("../images/moss_block.png") center/100% no-repeat;
+    color: var(--text-primary);
+}
+
+/* Поле поиска */
+.search-input {
+    position: relative;
+    flex: 1;
+    outline: 6px solid black;
+    border: none;
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("../images/obsidian.png") center/10vh;
+    color: var(--text-primary);
+    font-family: "Minecraft";
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    z-index: 11;
+}
+
+.search-input:focus {
+    outline: 6px solid white;
+    border-color: white;
+    z-index: 110;
+}
+
+/* Информация о результатах */
+.search-results-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("../images/obsidian.png") center/10vh;
+    outline: 6px solid black;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-family: "Minecraft";
+    min-width: 250px;
+}
+
+/* Загрузка */
+.search-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("../images/obsidian.png") center/10vh;
+    outline: 6px solid black;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-family: "Minecraft";
+}
+
+/* Кнопки */
+#toggle-filters,
+#clear-search,
+#apply-filters,
+#reset-filters {
+    font-family: "Minecraft";
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    transition: all 0.2s;
+    padding: 0.75rem 1rem;
+}
+
+#toggle-filters {
+    background: url("../images/quartz_bricks.png") center/10vh;
+    color: black;
+}
+
+#toggle-filters:hover {
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+        url("../images/quartz_bricks.png") center/10vh;
+}
+
+#clear-search {
+    background: url("../images/red_nether_bricks.png") center/10vh;
+    color: var(--text-primary);
+}
+
+#apply-filters {
+    background: url("../images/moss_block.png") center/10vh;
+    color: var(--text-primary);
+}
+
+#reset-filters {
+    background: url("../images/quartz_bricks.png") center/10vh;
+    color: black;
+}
+
+/* Панель фильтров */
+.filters-panel {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background:
+        linear-gradient(0, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+        url("../images/chiseled_polished_blackstone.png") repeat-x bottom/10vh,
+        url("../images/chiseled_polished_blackstone.png") repeat-x top/10vh,
+        url("../images/polished_blackstone_bricks.png") center/10vh;
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    position: relative;
+    z-index: 10;
+    animation: slideDown 0.3s ease-out;
+}
+
+.filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-group label {
+    color: var(--text-primary);
+    font-family: "Minecraft";
+    font-size: 1rem;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 0.75rem;
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    background: url("../images/quartz_bricks.png") center/10vh;
+}
+
+/* Чекбоксы и радиокнопки в фильтрах */
+.filter-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: black;
+}
+
+.filter-options label:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.filter-group input[type="checkbox"],
+.filter-group input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: url("../images/red_nether_bricks.png") center/100% no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 0;
+}
+
+.filter-group input[type="checkbox"]:checked,
+.filter-group input[type="radio"]:checked {
+    background: url("../images/moss_block.png") center/100% no-repeat;
+}
+
+/* Поля ввода чисел */
+.range-input {
+    
+    padding: 0.75rem;
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    background: url("../images/quartz_bricks.png") center/10vh;
+    color: var(--text-primary);
+    font-family: "Minecraft";
+    text-align: center;
+}
+
+.range-input:focus {
+    outline: none;
+    border-color: white;
+}
+
+.range-input::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Кнопки действий фильтров */
+.filter-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Пагинация */
+.grid-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#grid-page-info {
+    color: var(--text-primary);
+    font-family: "Minecraft";
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("../images/obsidian.png") center/10vh;
+    outline: 6px solid black;
+}
+
+/* Анимации */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Кастомный скроллбар */
+.filters-panel::-webkit-scrollbar,
+.filter-options::-webkit-scrollbar {
+    width: 8px;
+}
+
+.filters-panel::-webkit-scrollbar-track,
+.filter-options::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+.filters-panel::-webkit-scrollbar-thumb,
+.filter-options::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.filters-panel::-webkit-scrollbar-thumb:hover,
+.filter-options::-webkit-scrollbar-thumb:hover {
+    background: darkslategray;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .search-filters-container {
+        width: 95%;
+    }
+    
+    .search-header {
+        flex-direction: column;
+    }
+    
+    .search-input-group {
+        flex-direction: column;
+    }
+    
+    .search-results-info {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .filters-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-actions {
+        flex-direction: column;
+    }
+    
+    .grid-pagination {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .filters-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Индикатор активных фильтров */
+#toggle-filters.has-filters {
+    position: relative;
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("../images/moss_block.png") center/100% no-repeat;
+    color: var(--text-primary);
+}
+
+#toggle-filters.has-filters::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    background: limegreen;
+    border-radius: 50%;
+}
