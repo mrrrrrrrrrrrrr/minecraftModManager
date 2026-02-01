@@ -1,42 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\LibraryAPI_2025\\LibraryAPI_2025.csproj": {}
+    "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\LibraryAPI_2025.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\BLL\\BLL.csproj": {
+    "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\kapi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kapi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DAL\\DAL.csproj"
+              "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DAL\\DAL.csproj"
               },
-              "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DTO\\DTO.csproj"
+              "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DTO\\DTO.csproj"
               }
             }
           }
@@ -51,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -67,45 +61,53 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DAL\\DAL.csproj": {
+    "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\kapi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kapi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DTO\\DTO.csproj"
+              "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DTO\\DTO.csproj"
               }
             }
           }
@@ -120,7 +122,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -166,37 +168,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DTO\\DTO.csproj": {
+    "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DTO\\DTO.csproj",
+        "projectUniqueName": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DTO\\DTO.csproj",
+        "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DTO\\DTO.csproj",
         "packagesPath": "C:\\Users\\kapi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DTO\\obj\\",
+        "outputPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DTO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kapi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -215,7 +225,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -239,48 +249,56 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\LibraryAPI_2025\\LibraryAPI_2025.csproj": {
+    "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\LibraryAPI_2025.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\LibraryAPI_2025\\LibraryAPI_2025.csproj",
+        "projectUniqueName": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\LibraryAPI_2025.csproj",
         "projectName": "LibraryAPI_2025",
-        "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\LibraryAPI_2025\\LibraryAPI_2025.csproj",
+        "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\LibraryAPI_2025.csproj",
         "packagesPath": "C:\\Users\\kapi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\LibraryAPI_2025\\obj\\",
+        "outputPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kapi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\BLL\\BLL.csproj"
+              "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\BLL\\BLL.csproj"
               },
-              "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\DAL\\DAL.csproj"
+              "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\DAL\\DAL.csproj"
               }
             }
           }
@@ -295,7 +313,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -329,6 +347,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.12, 9.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -337,7 +373,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

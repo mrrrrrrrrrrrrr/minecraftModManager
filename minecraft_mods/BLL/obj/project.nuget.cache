@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q2q1vidZePs=",
+  "dgSpecHash": "RYvWSTXuylc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kapi\\Desktop\\учеба\\работы\\javascript\\3 лаба\\minecraft_mods\\minecraft_mods\\minecraft_mods\\BLL\\BLL.csproj",
+  "projectFilePath": "C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kapi\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.4\\microsoft.aspnetcore.authentication.jwtbearer.9.0.4.nupkg.sha512",
     "C:\\Users\\kapi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.4\\microsoft.aspnetcore.cryptography.internal.9.0.4.nupkg.sha512",
@@ -32,7 +32,10 @@
     "C:\\Users\\kapi\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
     "C:\\Users\\kapi\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Users\\kapi\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.1\\system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512",
-    "C:\\Users\\kapi\\.nuget\\packages\\system.linq.dynamic.core\\1.6.3\\system.linq.dynamic.core.1.6.3.nupkg.sha512"
+    "C:\\Users\\kapi\\.nuget\\packages\\system.linq.dynamic.core\\1.6.3\\system.linq.dynamic.core.1.6.3.nupkg.sha512",
+    "C:\\Users\\kapi\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.12\\microsoft.netcore.app.ref.9.0.12.nupkg.sha512",
+    "C:\\Users\\kapi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.12\\microsoft.windowsdesktop.app.ref.9.0.12.nupkg.sha512",
+    "C:\\Users\\kapi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.12\\microsoft.aspnetcore.app.ref.9.0.12.nupkg.sha512"
   ],
   "logs": []
 }

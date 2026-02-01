@@ -266,3 +266,21 @@ C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mo
 C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
 C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
 C:\Users\kapi\Desktop\учеба\работы\javascript\3 лаба\minecraft_mods\minecraft_mods\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\bin\Debug\net9.0\DAL.deps.json
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\bin\Debug\net9.0\DAL.runtimeconfig.json
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\bin\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\bin\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\bin\Debug\net9.0\DTO.dll
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\bin\Debug\net9.0\DTO.pdb
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.AssemblyReference.cache
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfoInputs.cache
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.AssemblyInfo.cs
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.sourcelink.json
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.csproj.Up2Date
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.dll
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\refint\DAL.dll
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.pdb
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\DAL.genruntimeconfig.cache
+C:\Users\kapi\Desktop\diplom\проект\minecraftModManager\minecraft_mods\DAL\obj\Debug\net9.0\ref\DAL.dll
