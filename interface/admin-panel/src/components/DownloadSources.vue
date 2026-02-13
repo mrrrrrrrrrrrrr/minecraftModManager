@@ -23,7 +23,6 @@
             v-model="source.title"
             type="text"
             placeholder="Например: Основной файл"
-            @input="saveSourceState(source.id)"
           />
         </div>
         
@@ -80,22 +79,30 @@
             </button>
           </div>
           
-          <!-- URL поле (показывается если displayType = 'url' ИЛИ всегда сохраняется) -->
+          <!-- URL поле -->
           <div v-if="source.displayType === 'url'" class="url-source">
             <input
               v-model="source.url"
               type="url"
               placeholder="https://example.com/download/mod.jar"
-              @input="saveSourceState(source.id)"
             />
             <small class="hint">Внешняя ссылка для скачивания</small>
           </div>
           
-          <!-- Файл (показывается если displayType = 'file' ИЛИ всегда сохраняется) -->
+          <!-- Файл -->
           <div v-else class="file-source">
-            <div v-if="source.fileName || source.filePath" class="existing-file">
-              <p><strong>Текущий файл:</strong> {{ source.fileName || 'файл из БД' }}</p>
+            <!-- 🔥 ОТОБРАЖАЕМ ОРИГИНАЛЬНОЕ ИМЯ -->
+            <div v-if="source.displayFileName || source.filePath" class="existing-file">
+              <p><strong>Текущий файл:</strong> {{ source.displayFileName || 'файл из БД' }}</p>
               <small v-if="source.fileSize">Размер: {{ formatFileSize(source.fileSize) }}</small>
+              
+              <!-- Предупреждения -->
+              <small v-if="source.versionsChanged || source.loadersChanged" class="warning-text">
+                ⚠️ При сохранении файл будет переименован
+              </small>
+              <small v-if="source.newFile" class="warning-text">
+                ⚠️ Старый файл будет удален с сервера
+              </small>
             </div>
             
             <div class="file-input">
@@ -107,18 +114,23 @@
                 style="display: none"
               />
               <button @click="triggerFileInput(source.id)" type="button" class="btn-file">
-                {{ source.fileName || source.filePath ? 'Заменить файл' : 'Выбрать файл' }}
+                {{ source.displayFileName || source.filePath ? 'Заменить файл' : 'Выбрать файл' }}
               </button>
-              <span v-if="source.fileName" class="file-name">{{ source.fileName }}</span>
+              <span v-if="source.newFile?.name" class="file-name">{{ source.newFile.name }}</span>
+              <span v-else-if="source.displayFileName" class="file-name">{{ source.displayFileName }}</span>
             </div>
             
-            <div v-if="source.newFile" class="file-info">
-              <small>Новый файл: {{ source.newFile.name }} ({{ formatFileSize(source.newFile.size) }})</small>
+            <!-- Информация о новом файле -->
+            <div v-if="source.newFile" class="file-info new-file">
+              <small>Будет загружен: {{ source.newFile.name }} ({{ formatFileSize(source.newFile.size) }})</small>
+              <small v-if="source.displayFileName" class="warning-text">
+                ⚠️ Старый файл "{{ source.displayFileName }}" будет удален
+              </small>
             </div>
             
-            <!-- Информация о файле из БД -->
+            <!-- Информация о существующем файле -->
             <div v-if="source.filePath && !source.newFile" class="file-info db-file">
-              <small>📎 Файл в БД: {{ source.fileName }}</small>
+              <small>📎 Файл в БД: {{ source.displayFileName || source.fileName }}</small>
               <br>
               <small style="color: #f39c12;">⚠️ Для изменения файла выберите новый</small>
             </div>
@@ -161,7 +173,6 @@ export default {
   data() {
     return {
       sources: [],
-      // Глобальное хранилище файлов (как в рабочем коде)
       downloadSourceFiles: {}
     }
   },
@@ -170,150 +181,179 @@ export default {
     if (this.initialSources.length > 0) {
       this.loadExistingSources()
     }
-    // НЕ создаем источник по умолчанию!
   },
   
-  // В секцию script после mounted():
-watch: {
-  // Отслеживаем изменение modId
-  modId: {
-    immediate: true,
-    handler(newModId) {
-      if (newModId && this.initialSources.length > 0) {
-        this.loadExistingSources()
-      }
-    }
-  },
-  
-  // Отслеживаем изменение initialSources
-  initialSources: {
-    immediate: true,
-    handler(newSources) {
-      if (newSources && newSources.length > 0) {
-        // Небольшая задержка чтобы компонент успел смонтироваться
-        setTimeout(() => {
+  watch: {
+    modId: {
+      immediate: true,
+      handler(newModId) {
+        if (newModId && this.initialSources.length > 0) {
           this.loadExistingSources()
-        }, 100)
+        }
+      }
+    },
+    
+    initialSources: {
+      immediate: true,
+      handler(newSources) {
+        if (newSources && newSources.length > 0) {
+          setTimeout(() => {
+            this.loadExistingSources()
+          }, 100)
+        }
       }
     }
-  }
-},
+  },
 
   methods: {
-    // Загрузка существующих источников (как в рабочем коде)
-    // Загрузка существующих источников (как в рабочем коде)
-loadExistingSources() {
-  console.log('🔄 ПРЕДЗАПОЛНЕНИЕ ИСТОЧНИКОВ:', {
-    initialSources: this.initialSources,
-    modId: this.modId
-  })
-  
-  if (!this.initialSources || this.initialSources.length === 0) {
-    console.log('⚠️ Нет данных для предзаполнения')
-    this.sources = []
-    return
-  }
-  
-  this.sources = this.initialSources.map(source => {
-    console.log('📦 Обрабатываем источник:', source)
+    // 🔥 ЗАГРУЗКА ИСТОЧНИКОВ С КЭШИРОВАНИЕМ ОРИГИНАЛЬНЫХ ИМЕН
+    loadExistingSources() {
+      console.log('🔄 Загрузка существующих источников')
+      
+      if (!this.initialSources || this.initialSources.length === 0) {
+        this.sources = []
+        return
+      }
+      
+      // 🔥 Кэш оригинальных имен (чтобы сохранить между обновлениями)
+      const nameCache = JSON.parse(localStorage.getItem('downloadSourceNames') || '{}')
+      
+      this.sources = this.initialSources.map((source, index) => {
+        // 🔥 Определяем имя для отображения:
+        // 1. Из кэша localStorage
+        // 2. Из поля fileName (если это не системное имя)
+        // 3. Берем из filePath и пробуем восстановить оригинальное имя
+        let displayFileName = nameCache[source.id] || source.fileName
+        
+        // 🔥 Проверяем, является ли fileName системным именем
+        // Системные имена выглядят как: "1_4_8_neoforge_019c1e1b.zip"
+        const isSystemName = /^[\w\d_-]+_\w+_\w{8}\.\w+$/.test(source.fileName || '')
+        
+        if (!displayFileName || isSystemName) {
+          // Пытаемся получить оригинальное имя из других источников
+          if (source.originalFileName) {
+            displayFileName = source.originalFileName
+          } else if (source.fileName && !isSystemName) {
+            displayFileName = source.fileName
+          } else {
+            // Используем имя из пути как fallback
+            displayFileName = source.filePath ? source.filePath.split('/').pop() : 'Неизвестный файл'
+          }
+        }
+        
+        // Сохраняем в кэш если нужно
+        if (displayFileName && !nameCache[source.id]) {
+          nameCache[source.id] = displayFileName
+          localStorage.setItem('downloadSourceNames', JSON.stringify(nameCache))
+        }
+        
+        const hasFileInDb = !!(source.filePath || source.fileName)
+        const displayType = hasFileInDb ? 'file' : 'url'
+        
+        // 🔥 Определяем системное имя файла
+        let serverFileName = null;
+        if (source.filePath) {
+          serverFileName = source.filePath.split('/').pop();
+        }
+        
+        return {
+          id: source.id,
+          title: source.title || `Источник скачивания`,
+          displayType: displayType,
+          url: source.url || '',
+          filePath: source.filePath || null,
+          fileName: source.fileName || null, // имя из БД (может быть системным)
+          displayFileName: displayFileName, // 🔥 имя для отображения пользователю
+          serverFileName: serverFileName, // системное имя для операций
+          fileSize: source.fileSize || null,
+          newFile: null,
+          // Оригинальные данные
+          originalVersionIds: source.versions?.map(v => v.id) || [],
+          originalModLoaderIds: source.modLoaders?.map(ml => ml.id) || [],
+          // Текущие данные
+          versionIds: source.versions?.map(v => v.id) || [],
+          modLoaderIds: source.modLoaders?.map(ml => ml.id) || [],
+          // Флаги изменений
+          fileChanged: false,
+          versionsChanged: false,
+          loadersChanged: false,
+          // Старый файл для удаления
+          oldFileToDelete: null
+        }
+      })
+      
+      console.log('✅ Источники загружены:', this.sources.map(s => ({
+        title: s.title,
+        displayFileName: s.displayFileName,
+        serverFileName: s.serverFileName
+      })))
+    },
     
-    // Определяем что показывать: если есть файл в БД - показываем файл, иначе URL
-    const hasFileInDb = !!source.filePath
-    const displayType = hasFileInDb ? 'file' : 'url'
-    
-    return {
-      id: source.id,
-      title: source.title || `Источник скачивания`,
-      displayType: displayType,
-      url: source.url || '',
-      filePath: source.filePath || null,
-      fileName: source.fileName || null,
-      fileSize: source.fileSize || null,
-      newFile: null, // новый файл, если выбрали
-      versionIds: source.versions?.map(v => v.id) || [],
-      modLoaderIds: source.modLoaders?.map(ml => ml.id) || []
-    }
-  })
-  
-  console.log('✅ Существующие источники загружены:', this.sources)
-  
-  // Отладочная информация
-  this.sources.forEach((source, index) => {
-    console.log(`   ${index + 1}. "${source.title}"`, {
-      type: source.displayType,
-      filePath: source.filePath,
-      versions: source.versionIds,
-      loaders: source.modLoaderIds
-    })
-  })
-},
-    
-    // Добавить новый источник (без файла по умолчанию)
     addSource() {
       const sourceId = 'temp_' + Date.now() + '_' + Math.random()
       const newSource = {
         id: sourceId,
         title: '',
-        displayType: 'url', // по умолчанию показываем URL
+        displayType: 'url',
         url: '',
         filePath: null,
         fileName: null,
+        displayFileName: null,
+        serverFileName: null,
         fileSize: null,
         newFile: null,
+        originalVersionIds: [],
+        originalModLoaderIds: [],
         versionIds: [],
-        modLoaderIds: []
+        modLoaderIds: [],
+        fileChanged: false,
+        versionsChanged: false,
+        loadersChanged: false,
+        oldFileToDelete: null
       }
       
-      console.log('➕ Новый источник:', newSource)
       this.sources.push(newSource)
     },
     
-    // Установить тип отображения (только UI, данные сохраняются всегда)
     setSourceType(sourceId, type) {
       const source = this.sources.find(s => s.id === sourceId)
       if (source) {
         source.displayType = type
-        console.log(`🔀 Переключение типа отображения для ${sourceId}: ${type}`)
       }
     },
     
-    // Сохранить состояние источника
-    saveSourceState(sourceId) {
-      // В Vue это делается автоматически через v-model
-      console.log(`💾 Состояние сохранено для ${sourceId}`)
-    },
-    
-    // Обновить счетчик выбранных
     updateSelectionCount(sourceId, type) {
-      // В Vue счетчик обновляется автоматически через длину массива
       const source = this.sources.find(s => s.id === sourceId)
       if (source) {
-        const count = type === 'version' ? source.versionIds.length : source.modLoaderIds.length
-        console.log(`🔢 ${type} выбрано: ${count} для ${sourceId}`)
+        if (type === 'version') {
+          source.versionsChanged = this.arraysDiffer(source.versionIds, source.originalVersionIds)
+        } else if (type === 'modloader') {
+          source.loadersChanged = this.arraysDiffer(source.modLoaderIds, source.originalModLoaderIds)
+        }
       }
     },
     
-    // Выбрать файл
+    arraysDiffer(arr1, arr2) {
+      if (arr1.length !== arr2.length) return true
+      const sorted1 = [...arr1].sort()
+      const sorted2 = [...arr2].sort()
+      return !sorted1.every((value, index) => value === sorted2[index])
+    },
+    
     triggerFileInput(sourceId) {
       this.$refs['fileInput_' + sourceId][0].click()
     },
     
-    // Обработка загрузки файла
     handleFileUpload(event, sourceId) {
       const file = event.target.files[0]
-      if (!file) {
-        console.log('❌ Файл не выбран')
-        return
-      }
+      if (!file) return
       
       console.log('📁 Выбран файл:', {
         sourceId: sourceId,
         name: file.name,
-        size: file.size,
-        type: file.type
+        size: file.size
       })
       
-      // Проверка расширения
       const allowedExtensions = ['.jar', '.zip', '.rar', '.7z']
       const fileExt = file.name.toLowerCase().substring(file.name.lastIndexOf('.'))
       
@@ -322,53 +362,72 @@ loadExistingSources() {
         return
       }
       
-      // Проверка размера (200MB)
       if (file.size > 200 * 1024 * 1024) {
         alert('Файл слишком большой. Максимальный размер: 200MB')
         return
       }
       
-      // Сохраняем файл в глобальное хранилище (как в рабочем коде)
       this.downloadSourceFiles[sourceId] = file
       
-      // Обновляем источник
       const source = this.sources.find(s => s.id === sourceId)
       if (source) {
+        // 🔥 Помечаем старый файл для удаления
+        if (source.serverFileName && !source.oldFileToDelete) {
+          source.oldFileToDelete = {
+            fileName: source.serverFileName,
+            displayName: source.displayFileName
+          }
+        }
+        
         source.newFile = file
+        source.displayFileName = file.name // 🔥 обновляем имя для отображения
         source.fileName = file.name
         source.fileSize = file.size
-        // Переключаем отображение на файл
+        source.fileChanged = true
         source.displayType = 'file'
         
-        console.log('✅ Файл добавлен в источник:', source)
+        // 🔥 Сохраняем имя в кэш
+        if (!source.id.startsWith('temp_')) {
+          const nameCache = JSON.parse(localStorage.getItem('downloadSourceNames') || '{}')
+          nameCache[source.id] = file.name
+          localStorage.setItem('downloadSourceNames', JSON.stringify(nameCache))
+        }
       }
       
-      // Очищаем input
       event.target.value = ''
     },
     
-    // Удалить источник
     async removeSource(sourceId) {
       if (!confirm('Удалить этот источник скачивания?')) return
       
       try {
-        // Очищаем глобальное хранилище (как в рабочем коде)
-        delete this.downloadSourceFiles[sourceId]
-        
         const source = this.sources.find(s => s.id === sourceId)
         const isTemp = sourceId.startsWith('temp_')
         
         if (isTemp) {
-          // Удаляем временный источник
           this.sources = this.sources.filter(s => s.id !== sourceId)
-          console.log(`🗑️ Временный источник удален: ${sourceId}`)
+          delete this.downloadSourceFiles[sourceId]
           return
         }
         
-        // Удаляем постоянный источник из БД
+        // 🔥 Удаляем файл с сервера
+        if (source && source.serverFileName) {
+          try {
+            await filesApi.deleteModFile(source.serverFileName)
+            console.log(`🗑️ Файл удален с сервера: ${source.serverFileName}`)
+          } catch (deleteError) {
+            console.warn(`⚠️ Не удалось удалить файл: ${deleteError.message}`)
+          }
+          
+          // 🔥 Удаляем из кэша
+          const nameCache = JSON.parse(localStorage.getItem('downloadSourceNames') || '{}')
+          delete nameCache[source.id]
+          localStorage.setItem('downloadSourceNames', JSON.stringify(nameCache))
+        }
+        
         await sourcesApi.delete(sourceId)
         this.sources = this.sources.filter(s => s.id !== sourceId)
-        console.log(`🗑️ Источник удален из БД: ${sourceId}`)
+        delete this.downloadSourceFiles[sourceId]
         
       } catch (error) {
         console.error('❌ Ошибка удаления источника:', error)
@@ -376,7 +435,6 @@ loadExistingSources() {
       }
     },
     
-    // Форматирование размера файла
     formatFileSize(bytes) {
       if (!bytes) return '0 Б'
       const units = ['Б', 'КБ', 'МБ', 'ГБ']
@@ -389,23 +447,20 @@ loadExistingSources() {
       return `${size.toFixed(1)} ${units[unitIndex]}`
     },
     
-    // ⭐⭐⭐⭐ ГЛАВНЫЙ МЕТОД: Сохранение источников (как в рабочем коде) ⭐⭐⭐⭐
+    // 🔥 ГЛАВНЫЙ МЕТОД
     async processSources(modId) {
       try {
-        console.log("💾 Сохранение источников в БД:", {
-          modId: modId,
-          sourcesCount: this.sources.length,
-          sources: this.sources
-        })
+        console.log("💾 Сохранение источников")
         
-        // Последовательное сохранение каждого источника
+        // 🔥 ШАГ 1: Удаляем старые файлы, если они были заменены
+        await this.deleteReplacedFiles()
+        
+        // 🔥 ШАГ 2: Сохраняем источники
         for (let i = 0; i < this.sources.length; i++) {
           const source = this.sources[i]
-          console.log(`💾 Сохраняем источник ${i + 1}/${this.sources.length}:`, source)
           
-          // Если источник пустой (нет названия, файла и URL) - пропускаем
+          // Пропускаем пустые источники
           if (!source.title && !source.newFile && !source.url && !source.filePath) {
-            console.log(`⚠️ Пустой источник, пропускаем`)
             continue
           }
           
@@ -414,7 +469,6 @@ loadExistingSources() {
             throw new Error(`Источник "${source.title}": выберите версии и загрузчики`)
           }
           
-          // Подготовка данных источника
           const sourceData = {
             title: source.title || `Файл для мода`,
             url: source.url || null,
@@ -422,48 +476,70 @@ loadExistingSources() {
             modLoaderIds: source.modLoaderIds
           }
           
-          // 🔥 КЛЮЧЕВОЙ МОМЕНТ: если есть новый файл - загружаем его
+          // 🔥 ЛОГИКА ОБРАБОТКИ ФАЙЛОВ
           if (source.newFile) {
+            // СЛУЧАЙ 1: Загружаем новый файл
             console.log(`📤 Загружаем новый файл: ${source.newFile.name}`)
             
-            try {
-              const uploadResult = await filesApi.uploadModFile(
-                source.newFile,
-                source.versionIds,
-                source.modLoaderIds,
-                modId
-              )
-              
-              console.log(`✅ Файл загружен:`, uploadResult)
-              
-              sourceData.filePath = uploadResult.filePath
-              sourceData.fileName = uploadResult.originalFileName || source.newFile.name
-              sourceData.fileSize = uploadResult.fileSize || source.newFile.size
-              
-            } catch (uploadError) {
-              console.error(`❌ Ошибка загрузки файла:`, uploadError)
-              throw new Error(`Ошибка загрузки файла: ${uploadError.message}`)
+            const uploadResult = await filesApi.uploadModFile(
+              source.newFile,
+              source.versionIds,
+              source.modLoaderIds,
+              modId
+            )
+            
+            sourceData.filePath = uploadResult.filePath
+            sourceData.fileName = source.displayFileName || source.newFile.name // 🔥 используем displayFileName
+            sourceData.fileSize = uploadResult.fileSize || source.newFile.size
+            
+            // 🔥 Сохраняем имя в кэш
+            if (!source.id.startsWith('temp_')) {
+              const nameCache = JSON.parse(localStorage.getItem('downloadSourceNames') || '{}')
+              nameCache[source.id] = source.displayFileName || source.newFile.name
+              localStorage.setItem('downloadSourceNames', JSON.stringify(nameCache))
             }
             
-          } else if (source.filePath) {
-            // Используем существующий файл из БД
-            console.log(`📁 Используем существующий файл: ${source.filePath}`)
-            sourceData.filePath = source.filePath
-            sourceData.fileName = source.fileName
-            sourceData.fileSize = source.fileSize
+          } else if (source.serverFileName) {
+            // СЛУЧАЙ 2: Работаем с существующим файлом
+            
+            if (source.versionsChanged || source.loadersChanged) {
+              // 🔥 Переименовываем файл
+              console.log(`🔄 Переименовываем файл: ${source.serverFileName}`)
+              
+              try {
+                const renameResult = await filesApi.renameModFile(
+                  source.serverFileName,
+                  source.versionIds,
+                  source.modLoaderIds,
+                  modId
+                )
+                
+                sourceData.filePath = renameResult.filePath
+                sourceData.fileName = source.displayFileName || source.fileName // 🔥 используем displayFileName
+                sourceData.fileSize = renameResult.fileSize
+                
+              } catch (renameError) {
+                console.error(`❌ Ошибка переименования:`, renameError)
+                // Оставляем старые данные
+                sourceData.filePath = source.filePath
+                sourceData.fileName = source.displayFileName || source.fileName
+                sourceData.fileSize = source.fileSize
+              }
+              
+            } else {
+              // Без изменений
+              sourceData.filePath = source.filePath
+              sourceData.fileName = source.displayFileName || source.fileName // 🔥 используем displayFileName
+              sourceData.fileSize = source.fileSize
+            }
           }
           
           // 🔥 Сохраняем источник в БД
           try {
-            let result
             if (source.id.startsWith('temp_')) {
-              // Новый источник
-              result = await sourcesApi.create(modId, sourceData)
-              console.log(`✅ Новый источник создан:`, result)
+              await sourcesApi.create(modId, sourceData)
             } else {
-              // Обновление существующего
-              result = await sourcesApi.update(source.id, sourceData)
-              console.log(`✅ Источник обновлен:`, result)
+              await sourcesApi.update(source.id, sourceData)
             }
             
           } catch (dbError) {
@@ -472,12 +548,32 @@ loadExistingSources() {
           }
         }
         
-        console.log("🎯 Все источники успешно сохранены в БД!")
+        console.log("🎯 Все источники успешно сохранены!")
         return []
         
       } catch (error) {
         console.error("❌ Критическая ошибка сохранения:", error)
         throw error
+      }
+    },
+    
+    // 🔥 УДАЛЕНИЕ ЗАМЕНЕННЫХ ФАЙЛОВ
+    async deleteReplacedFiles() {
+      const filesToDelete = this.sources
+        .filter(source => source.oldFileToDelete)
+        .map(source => source.oldFileToDelete)
+      
+      if (filesToDelete.length === 0) return
+      
+      console.log(`🗑️ Удаляем ${filesToDelete.length} замененных файлов`)
+      
+      for (const fileInfo of filesToDelete) {
+        try {
+          await filesApi.deleteModFile(fileInfo.fileName)
+          console.log(`✅ Файл удален: ${fileInfo.fileName}`)
+        } catch (error) {
+          console.warn(`⚠️ Не удалось удалить файл ${fileInfo.fileName}:`, error.message)
+        }
       }
     }
   }
@@ -485,7 +581,7 @@ loadExistingSources() {
 </script>
 
 <style scoped>
-/* Стили остаются такими же, только добавляем новый класс для файла из БД */
+/* Стили остаются такими же */
 .db-file {
   background: #fff3cd !important;
   border-left: 4px solid #ffc107 !important;
@@ -496,7 +592,27 @@ loadExistingSources() {
   color: #856404 !important;
 }
 
-/* Остальные стили такие же как в предыдущей версии */
+.file-info.new-file {
+  background: #e8f5e9 !important;
+  border-left: 4px solid #2ecc71 !important;
+}
+
+.warning-text {
+  color: #e74c3c !important;
+  font-weight: 500;
+  display: block;
+  margin-top: 5px;
+}
+
+.file-path {
+  display: block;
+  font-size: 11px;
+  color: #6c757d;
+  word-break: break-all;
+  margin-top: 3px;
+}
+
+/* Остальные существующие стили */
 .download-sources {
   background: #f8f9fa;
   border-radius: 8px;
@@ -652,14 +768,6 @@ loadExistingSources() {
   color: #495057;
   font-size: 14px;
   word-break: break-all;
-}
-
-.file-info {
-  margin-top: 10px;
-  padding: 8px;
-  background: #e8f5e9;
-  border-radius: 4px;
-  color: #2e7d32;
 }
 
 /* Ссылка */

@@ -7,11 +7,11 @@ const authFetch = (url, options = {}) => {
     'Content-Type': 'application/json',
     ...options.headers
   }
-  
+
   if (authToken) {
     headers['Authorization'] = `Bearer ${authToken}`
   }
-  
+
   return fetch(`${API_BASE}${url}`, {
     ...options,
     headers
@@ -44,28 +44,28 @@ export const authApi = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(credentials)
     })
-    .then(async response => {
-      if (!response.ok) {
-        const error = await response.text()
-        throw new Error(error)
-      }
-      return response.json()
-    })
+      .then(async response => {
+        if (!response.ok) {
+          const error = await response.text()
+          throw new Error(error)
+        }
+        return response.json()
+      })
   },
-  
+
   register(userData) {
     return fetch(`${API_BASE}/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(userData)
     })
-    .then(async response => {
-      if (!response.ok) {
-        const error = await response.text()
-        throw new Error(error)
-      }
-      return response.json()
-    })
+      .then(async response => {
+        if (!response.ok) {
+          const error = await response.text()
+          throw new Error(error)
+        }
+        return response.json()
+      })
   }
 }
 
@@ -75,56 +75,56 @@ export const modsApi = {
   getAll() {
     return authFetch('/mods/getAll')
   },
-  
-// В api.js добавьте в modsApi:
-searchMods(params = {}) {
-  const queryParams = new URLSearchParams()
-  
-  // Базовые параметры пагинации
-  queryParams.append('pageNumber', params.pageNumber || 1)
-  queryParams.append('pageSize', params.pageSize || 10)
-  
-  // Параметры сортировки
-  if (params.sortBy) {
-    queryParams.append('sortBy', params.sortBy)
-  }
-  if (params.orderBy) {
-    queryParams.append('orderBy', params.orderBy)
-  }
-  
-  // Текстовый поиск
-  if (params.search) {
-    queryParams.append('search', params.search)
-  }
-  
-  // Фильтрация по типу
-  if (params.isClientside !== undefined && params.isClientside !== null) {
-    queryParams.append('isClientside', params.isClientside)
-  }
-  
-  // Фильтрация по скачиваниям
-  if (params.minDownloads > 0) {
-    queryParams.append('minDownloads', params.minDownloads)
-  }
-  
-  // Фильтрация по размеру
-  if (params.maxSize > 0) {
-    queryParams.append('maxSize', params.maxSize)
-  }
-  
-  // Массивы ID - множественные параметры
-  const arrayParams = ['versionIds', 'modLoaderIds', 'tagIds', 'developers']
-  arrayParams.forEach(paramName => {
-    if (params[paramName] && Array.isArray(params[paramName]) && params[paramName].length > 0) {
-      params[paramName].forEach(id => {
-        queryParams.append(paramName, id)
-      })
+
+  // В api.js добавьте в modsApi:
+  searchMods(params = {}) {
+    const queryParams = new URLSearchParams()
+
+    // Базовые параметры пагинации
+    queryParams.append('pageNumber', params.pageNumber || 1)
+    queryParams.append('pageSize', params.pageSize || 10)
+
+    // Параметры сортировки
+    if (params.sortBy) {
+      queryParams.append('sortBy', params.sortBy)
     }
-  })
-  
-  console.log('🔍 Параметры поиска:', queryParams.toString())
-  return authFetch(`/mods?${queryParams.toString()}`)
-},
+    if (params.orderBy) {
+      queryParams.append('orderBy', params.orderBy)
+    }
+
+    // Текстовый поиск
+    if (params.search) {
+      queryParams.append('search', params.search)
+    }
+
+    // Фильтрация по типу
+    if (params.isClientside !== undefined && params.isClientside !== null) {
+      queryParams.append('isClientside', params.isClientside)
+    }
+
+    // Фильтрация по скачиваниям
+    if (params.minDownloads > 0) {
+      queryParams.append('minDownloads', params.minDownloads)
+    }
+
+    // Фильтрация по размеру
+    if (params.maxSize > 0) {
+      queryParams.append('maxSize', params.maxSize)
+    }
+
+    // Массивы ID - множественные параметры
+    const arrayParams = ['versionIds', 'modLoaderIds', 'tagIds', 'developers']
+    arrayParams.forEach(paramName => {
+      if (params[paramName] && Array.isArray(params[paramName]) && params[paramName].length > 0) {
+        params[paramName].forEach(id => {
+          queryParams.append(paramName, id)
+        })
+      }
+    })
+
+    console.log('🔍 Параметры поиска:', queryParams.toString())
+    return authFetch(`/mods?${queryParams.toString()}`)
+  },
 
   // Пагинация с QueryParamsDto
   getByPage(params = {}) {
@@ -136,7 +136,7 @@ searchMods(params = {}) {
       sortBy: params.sortBy || 'CreatedAt',
       orderBy: params.orderBy || 'desc'
     }
-    
+
     // Преобразуем в строку параметров
     const queryString = new URLSearchParams({
       pageNumber: queryParams.pageNumber,
@@ -145,11 +145,11 @@ searchMods(params = {}) {
       sortBy: queryParams.sortBy,
       orderBy: queryParams.orderBy
     }).toString()
-    
+
     console.log('Отправляем параметры:', queryString)
     return authFetch(`/mods?${queryString}`)
   },
-  
+
   // Альтернатива: отправляем как JSON в body
   getByPageJson(params = {}) {
     const queryParams = {
@@ -159,31 +159,31 @@ searchMods(params = {}) {
       sortBy: params.sortBy || 'CreatedAt',
       orderBy: params.orderBy || 'desc'
     }
-    
+
     return authFetch('/mods/by-page', {
       method: 'POST',
       body: JSON.stringify(queryParams)
     })
   },
-  
+
   getById(id) {
     return authFetch(`/mods/${id}`)
   },
-  
+
   create(modData) {
     return authFetch('/mods', {
       method: 'POST',
       body: JSON.stringify(modData)
     })
   },
-  
+
   update(id, modData) {
     return authFetch(`/mods/${id}`, {
       method: 'PUT',
       body: JSON.stringify(modData)
     })
   },
-  
+
   delete(id) {
     return authFetch(`/mods/${id}`, {
       method: 'DELETE'
@@ -196,27 +196,27 @@ export const referencesApi = {
   getVersions() {
     return authFetch('/versions/getAll')
   },
-  
+
   getModLoaders() {
     return authFetch('/modLoaders/getAll')
   },
-  
+
   getTags() {
     return authFetch('/tags/getAll')
   },
-  
+
   getDevelopers() {
     return authFetch('/developers/getAll')
   },
-  
+
   getFocuses() {
     return authFetch('/focuses/getAll')
   },
-  
+
   getDifficulties() {
     return authFetch('/difficulties/getAll')
   },
-  
+
   getCollections() {
     return authFetch('/collections/getAll')
   }
@@ -231,7 +231,7 @@ export const quickAddApi = {
       body: JSON.stringify(versionData)
     })
   },
-  
+
   // Создание загрузчика модов
   async createModLoader(modLoaderData) {
     return authFetch('/modloaders', {
@@ -239,7 +239,7 @@ export const quickAddApi = {
       body: JSON.stringify(modLoaderData)
     })
   },
-  
+
   // Создание тега
   async createTag(tagData) {
     return authFetch('/tags', {
@@ -247,7 +247,7 @@ export const quickAddApi = {
       body: JSON.stringify(tagData)
     })
   },
-  
+
   // Создание разработчика
   async createDeveloper(developerData) {
     return authFetch('/developers', {
@@ -255,7 +255,7 @@ export const quickAddApi = {
       body: JSON.stringify(developerData)
     })
   },
-  
+
   // Создание сложности
   async createDifficulty(difficultyData) {
     return authFetch('/difficulties', {
@@ -263,7 +263,7 @@ export const quickAddApi = {
       body: JSON.stringify(difficultyData)
     })
   },
-  
+
   // Создание фокуса
   async createFocus(focusData) {
     return authFetch('/focuses', {
@@ -282,7 +282,7 @@ export const quickAddApi = {
 export const filesApi = {
   async uploadModFile(file, versionIds, modLoaderIds, modId) {
     console.log("📁 Загрузка файла:", file.name);
-    
+
     const formData = new FormData();
     formData.append("file", file);
     formData.append("versionIds", JSON.stringify(versionIds));
@@ -309,19 +309,68 @@ export const filesApi = {
     return await response.json();
   },
 
-  async downloadModFile(fileName) {
-  const response = await fetch(`${API_BASE}/Upload/mods/${fileName}`, {
-    headers: {
-      'Authorization': authToken ? `Bearer ${authToken}` : ''
-    }
+ async renameModFile(oldFileName, versionIds, modLoaderIds, modId) {
+  console.log('🔄 Переименование файла в api.js:', {
+    oldFileName,
+    versionIds,
+    modLoaderIds,
+    modId
   });
-
-  if (!response.ok) {
-    throw new Error(`Ошибка скачивания: ${response.status}`);
+  
+  // 🔥 ВАЖНО: если oldFileName содержит путь, извлекаем только имя файла
+  if (oldFileName.includes('/')) {
+    oldFileName = oldFileName.split('/').pop();
+    console.log(`🔄 Извлекли имя файла из пути: ${oldFileName}`);
   }
-
-  return await response.blob();
+  
+  const token = localStorage.getItem('token');
+  
+  const formData = new FormData();
+  formData.append('oldFileName', oldFileName);
+  formData.append('versionIds', JSON.stringify(versionIds));
+  formData.append('modLoaderIds', JSON.stringify(modLoaderIds));
+  
+  if (modId && modId !== 'null' && modId !== 'undefined') {
+    formData.append('modId', modId);
+  }
+  
+  const response = await fetch(`${API_BASE}/Upload/mods/rename`, {
+    method: 'PUT',
+    headers: {
+      'Authorization': token ? `Bearer ${token}` : ''
+    },
+    body: formData
+  });
+  
+  if (!response.ok) {
+    const errorText = await response.text();
+    console.error('❌ Ошибка переименования файла:', {
+      status: response.status,
+      error: errorText,
+      oldFileName,
+      url: `${API_BASE}/Upload/mods/rename`
+    });
+    throw new Error(`Ошибка переименования: ${response.status} - ${errorText}`);
+  }
+  
+  const result = await response.json();
+  console.log('✅ Файл успешно переименован:', result);
+  return result;
 },
+
+  async downloadModFile(fileName) {
+    const response = await fetch(`${API_BASE}/Upload/mods/${fileName}`, {
+      headers: {
+        'Authorization': authToken ? `Bearer ${authToken}` : ''
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`Ошибка скачивания: ${response.status}`);
+    }
+
+    return await response.blob();
+  },
 
   async deleteModFile(fileName) {
     const token = localStorage.getItem('token');
@@ -375,41 +424,41 @@ export const filesApi = {
   },
 
   async uploadGalleryImage(file, modId) {
-  const formData = new FormData();
-  formData.append("file", file);
-  formData.append("modId", modId);
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("modId", modId);
 
-  const token = localStorage.getItem('token');
-  const response = await fetch(`${API_BASE}/Upload/gallery-image`, {
-    method: "POST",
-    headers: {
-      "Authorization": token ? `Bearer ${token}` : ''
-    },
-    body: formData
-  });
+    const token = localStorage.getItem('token');
+    const response = await fetch(`${API_BASE}/Upload/gallery-image`, {
+      method: "POST",
+      headers: {
+        "Authorization": token ? `Bearer ${token}` : ''
+      },
+      body: formData
+    });
 
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Ошибка загрузки изображения галереи: ${response.status} - ${errorText}`);
-  }
-
-  return await response.text();
-},
-
-async deleteGalleryImage(fileName) {
-  const token = localStorage.getItem('token');
-  const response = await fetch(`${API_BASE}/Upload/gallery-image/${fileName}`, {
-    method: "DELETE",
-    headers: {
-      "Authorization": token ? `Bearer ${token}` : ''
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`Ошибка загрузки изображения галереи: ${response.status} - ${errorText}`);
     }
-  });
 
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Ошибка удаления изображения галереи: ${response.status} - ${errorText}`);
+    return await response.text();
+  },
+
+  async deleteGalleryImage(fileName) {
+    const token = localStorage.getItem('token');
+    const response = await fetch(`${API_BASE}/Upload/gallery-image/${fileName}`, {
+      method: "DELETE",
+      headers: {
+        "Authorization": token ? `Bearer ${token}` : ''
+      }
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`Ошибка удаления изображения галереи: ${response.status} - ${errorText}`);
+    }
   }
-}
 };
 
 // API для источников скачивания (РАБОЧАЯ ВЕРСИЯ)
@@ -703,25 +752,29 @@ export const entitiesApi = {
   }
 };
 
-// API для галереи модов
+// галерея 
 export const galleriesApi = {
   async getByModId(modId) {
     return authFetch(`/modgalleries/mod/${modId}`);
   },
-  
+
+  async getById(id) {
+    return authFetch(`/modgalleries/${id}`);
+  },
+
   async create(galleryData) {
     return authFetch('/modgalleries', {
       method: 'POST',
       body: JSON.stringify(galleryData)
     });
   },
-  
+
   async delete(id) {
     return authFetch(`/modgalleries/${id}`, {
       method: 'DELETE'
     });
   },
-  
+
   async update(id, galleryData) {
     return authFetch(`/modgalleries/${id}`, {
       method: 'PUT',

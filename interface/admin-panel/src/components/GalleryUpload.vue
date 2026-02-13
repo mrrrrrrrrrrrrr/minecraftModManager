@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import { filesApi } from '../api.js'
+import { filesApi, galleriesApi } from '../api.js'
 
 export default {
   name: 'GalleryUpload',
@@ -185,17 +185,17 @@ export default {
           await this.deleteGalleryImage(imageId)
         } catch (error) {
           // Продолжаем, даже если не удалось удалить
+          console.warn(`Не удалось удалить изображение ${imageId}:`, error)
         }
       }
     },
     
-    // API метод для загрузки изображения
+    // ✅ Исправлено: используем API метод для загрузки изображения
     async uploadGalleryImage(file, modId, order) {
       // Загружаем файл на сервер
       const imageUrl = await filesApi.uploadGalleryImage(file, modId)
 
-      // Сохраняем в БД
-      const token = localStorage.getItem('token')
+      // ✅ Исправлено: используем galleriesApi для сохранения в БД
       const galleryData = {
         imageUrl: imageUrl,
         fileName: file.name,
@@ -203,51 +203,27 @@ export default {
         modId: modId
       }
       
-      const response = await fetch('http://localhost:5126/modgalleries', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': token ? `Bearer ${token}` : ''
-        },
-        body: JSON.stringify(galleryData)
-      })
-
-      if (!response.ok) {
-        throw new Error('Ошибка сохранения в галерее')
-      }
-
-      return await response.json()
+      return await galleriesApi.create(galleryData)
     },
     
-    // API метод для удаления изображения
+    // ✅ Исправлено: используем API метод для удаления изображения
     async deleteGalleryImage(imageId) {
-      // Получаем информацию об изображении
-      const token = localStorage.getItem('token')
-      const response = await fetch(`http://localhost:5126/modgalleries/${imageId}`, {
-        headers: {
-          'Authorization': token ? `Bearer ${token}` : ''
-        }
-      })
-
-      if (response.ok) {
-        const imageData = await response.json()
+      try {
+        // Получаем информацию об изображении через API
+        const imageData = await galleriesApi.getById(imageId)
         
         // Удаляем файл с сервера
-        if (imageData.imageUrl) {
+        if (imageData && imageData.imageUrl) {
           const fileName = imageData.imageUrl.split('/').pop()
           await filesApi.deleteGalleryImage(fileName)
         }
-      }
-
-      // Удаляем запись из БД
-      const deleteResponse = await fetch(`http://localhost:5126/modgalleries/${imageId}`, {
-        method: 'DELETE',
-        headers: { 'Authorization': token ? `Bearer ${token}` : '' }
-      })
-
-      if (!deleteResponse.ok) {
-        const error = await deleteResponse.text()
-        throw new Error(error)
+        
+        // Удаляем запись из БД
+        await galleriesApi.delete(imageId)
+        
+      } catch (error) {
+        console.error('Ошибка удаления изображения галереи:', error)
+        throw error
       }
     }
   }

@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <header class="header">
-      <h1>🎮 Менеджер Minecraft Модов</h1>
+      <div>
+        <h1>KapiMods</h1>
+        <h5>Ваш универсальный менеджер модификаций</h5>
+      </div>
+
       <div class="auth-status">
-        <span v-if="isAuthenticated">🔓 {{ username }}</span>
-        <span v-else>🔒 Не авторизован</span>
         <button @click="handleAuthClick" class="auth-btn">
           {{ isAuthenticated ? 'Выйти' : 'Войти' }}
         </button>
@@ -54,7 +56,7 @@
               </button>
 
               <button @click="showModForm = true; selectedModForEdit = null" class="add-btn">
-                + Добавить мод
+                Добавить мод
               </button>
             </div>
 
@@ -178,10 +180,6 @@
           </div>
         </div>
 
-        <!-- Панель быстрого добавления -->
-        <QuickAddPanel @item-added="handleItemAdded" />
-        <EntitiesManager @entities-updated="handleEntitiesUpdated" />
-
         <!-- Режим отображения: Сетка -->
         <div v-if="viewMode === 'grid' && mods.length > 0" class="mods-grid">
           <div v-for="mod in sortedMods" :key="mod.id" class="mod-card">
@@ -216,6 +214,12 @@
                 {{ loader.title }}
               </span>
               <span v-if="mod.isClientside" class="tag clientside-tag">Клиентский</span>
+
+              <!-- ДОБАВЛЯЕМ РАЗРАБОТЧИКОВ В СЕТКЕ -->
+              <span v-for="developer in (mod.developers || []).slice(0, 1)" :key="developer.id"
+                class="tag developer-tag">
+                👨‍💻 {{ developer.nickname }}
+              </span>
             </div>
 
             <!-- Действия -->
@@ -255,6 +259,9 @@
                 <th>Клиентский</th>
                 <th>Версии</th>
                 <th>Загрузчики</th>
+                <th>Теги</th>
+                <!-- ДОБАВЛЯЕМ КОЛОНКУ РАЗРАБОТЧИКОВ -->
+                <th>Разработчики</th>
                 <th>Действия</th>
               </tr>
             </thead>
@@ -303,6 +310,34 @@
                     </span>
                     <span v-if="(mod.modLoaders || []).length > 2" class="more-tag">
                       +{{ (mod.modLoaders || []).length - 2 }}
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <div class="tags-list">
+                    <span v-for="tag in (mod.tags || []).slice(0, 2)" :key="tag.id" class="tag-tag">
+                      {{ tag.title }}
+                    </span>
+                    <span v-if="(mod.tags || []).length > 2" class="more-tag">
+                      +{{ (mod.tags || []).length - 2 }}
+                    </span>
+                    <span v-else-if="!(mod.tags || []).length" class="no-data">
+                      —
+                    </span>
+                  </div>
+                </td>
+                <!-- ДОБАВЛЯЕМ ЯЧЕЙКУ ДЛЯ РАЗРАБОТЧИКОВ -->
+                <td>
+                  <div class="developers-list">
+                    <span v-for="developer in (mod.developers || []).slice(0, 2)" :key="developer.id"
+                      class="developer-tag">
+                      👨‍💻 {{ developer.nickname }}
+                    </span>
+                    <span v-if="(mod.developers || []).length > 2" class="more-tag">
+                      +{{ (mod.developers || []).length - 2 }}
+                    </span>
+                    <span v-else-if="!(mod.developers || []).length" class="no-data">
+                      —
                     </span>
                   </div>
                 </td>
@@ -368,7 +403,7 @@
               </div>
             </div>
 
-            <!-- Статистика -->
+            <!-- Статистика - ИСПРАВЛЕНА ГОРИЗОНТАЛЬНАЯ ВЕРСТКА -->
             <div class="modal-grid">
               <div class="modal-item">
                 <strong>Загрузки:</strong>
@@ -396,6 +431,26 @@
               <div class="tags-list">
                 <span v-for="version in selectedMod.versions" :key="version.id" class="tag version-tag">
                   {{ version.title }}
+                </span>
+              </div>
+            </div>
+
+            <!-- Теги -->
+            <div class="modal-section" v-if="selectedMod.tags && selectedMod.tags.length">
+              <h3>Теги</h3>
+              <div class="tags-list">
+                <span v-for="tag in selectedMod.tags" :key="tag.id" class="tag tag-tag">
+                  {{ tag.title }}
+                </span>
+              </div>
+            </div>
+
+            <!-- Разработчики - ДОБАВЛЕНО -->
+            <div class="modal-section" v-if="selectedMod.developers && selectedMod.developers.length">
+              <h3>Разработчики</h3>
+              <div class="tags-list">
+                <span v-for="developer in selectedMod.developers" :key="developer.id" class="tag developer-tag">
+                  👨‍💻 {{ developer.nickname }}
                 </span>
               </div>
             </div>
@@ -501,6 +556,10 @@
           </div>
         </div>
       </div>
+
+      <!-- Панель быстрого добавления -->
+        <QuickAddPanel @item-added="handleItemAdded" />
+        <EntitiesManager @entities-updated="handleEntitiesUpdated" />
     </main>
 
     <!-- Сообщение если не авторизован -->
@@ -508,7 +567,7 @@
       <h2>🔐 Требуется авторизация</h2>
       <p>Для работы с админ-панелью необходимо войти в систему</p>
       <button @click="showAuthModal = true" class="login-btn">
-        Войти или зарегистрироваться
+        Войти
       </button>
     </div>
 
@@ -532,54 +591,13 @@
 </template>
 
 <script>
-import { modsApi, clearAuthToken, referencesApi } from './api.js'
+import { modsApi, clearAuthToken, referencesApi, galleriesApi, sourcesApi, filesApi } from './api.js'
 import AuthModal from './components/AuthModal.vue'
 import QuickAddPanel from './components/QuickAddPanel.vue'
 import ModFormModal from './components/ModFormModal.vue'
 import EntitiesManager from './components/EntitiesManager.vue'
 
 const API_BASE = 'http://localhost:5126'
-
-// API для галереи и источников
-const fetchGalleryImages = async (modId) => {
-  try {
-    const token = localStorage.getItem('token')
-    const response = await fetch(`${API_BASE}/modgalleries/mod/${modId}`, {
-      headers: {
-        'Authorization': token ? `Bearer ${token}` : ''
-      }
-    })
-
-    if (!response.ok) {
-      console.log(`❌ Ошибка загрузки галереи: ${response.status}`)
-      return []
-    }
-
-    const data = await response.json()
-    console.log(`✅ Галерея загружена:`, data)
-    return Array.isArray(data) ? data : []
-
-  } catch (error) {
-    console.error('Ошибка загрузки галереи:', error)
-    return []
-  }
-}
-
-const fetchDownloadSources = async (modId) => {
-  try {
-    const token = localStorage.getItem('token')
-    const response = await fetch(`${API_BASE}/download-sources/mod/${modId}`, {
-      headers: {
-        'Authorization': token ? `Bearer ${token}` : ''
-      }
-    })
-    if (!response.ok) throw new Error('Ошибка загрузки источников')
-    return await response.json()
-  } catch (error) {
-    console.error('Ошибка загрузки источников:', error)
-    return []
-  }
-}
 
 export default {
   name: 'App',
@@ -610,7 +628,7 @@ export default {
 
       // Пагинация и поиск
       currentPage: 1,
-      pageSize: 10,
+      pageSize: 3,
       totalMods: 0,
       totalPages: 1,
       searchQuery: '',
@@ -643,7 +661,6 @@ export default {
 
       // Авторизация
       isAuthenticated: false,
-      username: localStorage.getItem('username') || 'Пользователь',
       showAuthModal: false,
 
       // Формы
@@ -807,103 +824,7 @@ export default {
         this.totalPages = Math.ceil(this.totalMods / this.pageSize)
       } catch (err) {
         this.error = err.message || 'Ошибка загрузки модов'
-        this.loadMockData()
       }
-    },
-
-    handleEntitiesUpdated({ type, data, action, id }) {
-      console.log(`Сущность ${type} обновлена:`, data)
-
-      // Обновляем соответствующие списки в фильтрах
-      if (action === 'delete') {
-        // Удаляем из списков фильтров
-        switch (type) {
-          case 'version':
-            this.availableVersions = this.availableVersions.filter(v => v.id !== id)
-            break
-          case 'modloader':
-            this.availableModLoaders = this.availableModLoaders.filter(m => m.id !== id)
-            break
-          case 'tag':
-            this.availableTags = this.availableTags.filter(t => t.id !== id)
-            break
-          case 'developer':
-            this.availableDevelopers = this.availableDevelopers.filter(d => d.id !== id)
-            break
-          case 'difficulty':
-            // Если используется в фильтрах
-            break
-          case 'focus':
-            // Если используется в фильтрах
-            break
-        }
-      } else {
-        // Обновляем данные в списках фильтров
-        this.refreshFilterData()
-      }
-    },
-
-    async refreshFilterData() {
-      try {
-        const [versions, modLoaders, tags, developers] = await Promise.all([
-          referencesApi.getVersions(),
-          referencesApi.getModLoaders(),
-          referencesApi.getTags(),
-          referencesApi.getDevelopers()
-        ])
-
-        this.availableVersions = versions.items || versions || []
-        this.availableModLoaders = modLoaders.items || modLoaders || []
-        this.availableTags = tags.items || tags || []
-        this.availableDevelopers = developers.items || developers || []
-
-      } catch (error) {
-        console.error('Ошибка обновления фильтров:', error)
-      }
-    },
-
-    // Тестовые данные (fallback)
-    loadMockData() {
-      this.mods = [
-        {
-          id: '1',
-          title: 'OptiFine',
-          description: 'Оптимизация графики',
-          downloads: 15000000,
-          size: 2.5,
-          isClientside: true,
-          imageUrl: '/uploads/optifine.png',
-          versions: [{ id: '1', title: '1.20.1' }],
-          modLoaders: [{ id: '1', title: 'Forge' }],
-          createdAt: '2024-01-01T10:00:00Z'
-        },
-        {
-          id: '2',
-          title: 'JourneyMap',
-          description: 'Карта и навигация в мире',
-          downloads: 8000000,
-          size: 3.2,
-          isClientside: true,
-          imageUrl: '/uploads/journeymap.png',
-          versions: [{ id: '1', title: '1.20.1' }, { id: '2', title: '1.19.2' }],
-          modLoaders: [{ id: '1', title: 'Forge' }, { id: '2', title: 'Fabric' }],
-          createdAt: '2024-01-15T10:00:00Z'
-        },
-        {
-          id: '3',
-          title: 'Create',
-          description: 'Технологический мод с механизмами',
-          downloads: 12000000,
-          size: 5.1,
-          isClientside: false,
-          imageUrl: '/uploads/create.png',
-          versions: [{ id: '1', title: '1.20.1' }, { id: '2', title: '1.19.2' }],
-          modLoaders: [{ id: '1', title: 'Forge' }],
-          createdAt: '2024-02-01T10:00:00Z'
-        }
-      ]
-      this.totalMods = this.mods.length
-      this.totalPages = 1
     },
 
     // Обработчик ввода поиска
@@ -1001,9 +922,10 @@ export default {
       this.sourcesLoading = true
 
       try {
+        // Используем API методы вместо прямых fetch
         const [gallery, sources] = await Promise.all([
-          fetchGalleryImages(mod.id),
-          fetchDownloadSources(mod.id)
+          galleriesApi.getByModId(mod.id),
+          sourcesApi.getByModId(mod.id)
         ])
 
         this.galleryImages = Array.isArray(gallery) ? gallery : []
@@ -1031,8 +953,8 @@ export default {
         const fileName = this.extractFileNameFromPath(source)
         console.log(`📁 Имя файла для скачивания: ${fileName}`)
 
-        // Скачиваем файл
-        const blob = await this.downloadModFile(source)
+        // Скачиваем файл через API
+        const blob = await filesApi.downloadModFile(fileName)
 
         // Создаем ссылку для скачивания
         const url = window.URL.createObjectURL(blob)
@@ -1061,65 +983,9 @@ export default {
       }
     },
 
-    // API метод для скачивания файла
-    async downloadModFile(source) {
-      const token = localStorage.getItem('token')
-
-      console.log('📥 Скачивание файла (рабочая версия):', source)
-
-      // 1. Получаем fileName ТОЧНО так же как в рабочем проекте
-      let fileName = null
-
-      // Вариант 1: Из filePath (как в renderDownloadSourceRow рабочего проекта)
-      if (source.filePath) {
-        fileName = source.filePath.split('/').pop()
-        console.log(`✅ Извлекли из filePath: "${fileName}" (как в рабочем проекте)`)
-      }
-
-      // Вариант 2: Из fileName (если есть)
-      if (!fileName && source.fileName) {
-        fileName = source.fileName
-        console.log(`✅ Используем fileName: "${fileName}"`)
-      }
-
-      // Вариант 3: Из downloadUrl (если есть)
-      if (!fileName && source.downloadUrl) {
-        try {
-          const url = new URL(source.downloadUrl)
-          fileName = url.pathname.split('/').pop()
-          console.log(`✅ Извлекли из downloadUrl: "${fileName}"`)
-        } catch (e) {
-          console.log('⚠️ Невалидный downloadUrl')
-        }
-      }
-
-      if (!fileName) {
-        throw new Error('Не удалось определить имя файла для скачивания')
-      }
-
-      console.log(`🔗 Итоговое имя файла: ${fileName}`)
-
-      // 2. Скачиваем файл ТОЧНО так же как в рабочем проекте
-      const response = await fetch(`${API_BASE}/Upload/mods/${encodeURIComponent(fileName)}`, {
-        headers: {
-          'Authorization': token ? `Bearer ${token}` : '',
-          'Accept': 'application/octet-stream'
-        }
-      })
-
-      if (!response.ok) {
-        const errorText = await response.text()
-        console.error(`❌ Ошибка ${response.status}:`, errorText)
-        throw new Error(`Ошибка скачивания: ${response.status} - ${errorText}`)
-      }
-
-      console.log(`✅ Файл успешно получен с сервера: ${fileName}`)
-      return await response.blob()
-    },
-
     // Извлечение имени файла из пути
     extractFileNameFromPath(source) {
-      console.log('🔍 Извлекаем имя файла (рабочий метод):', {
+      console.log('🔍 Извлекаем имя файла:', {
         fileName: source.fileName,
         filePath: source.filePath
       })
@@ -1236,26 +1102,17 @@ export default {
       try {
         console.log(`🖼️ Удаление галереи мода ${modId}`)
 
-        // Получаем изображения галереи
-        const token = localStorage.getItem('token')
-        const response = await fetch(`${API_BASE}/modgalleries/mod/${modId}`, {
-          headers: {
-            'Authorization': token ? `Bearer ${token}` : ''
-          }
-        })
+        // Используем API метод вместо прямого fetch
+        const galleryImages = await galleriesApi.getByModId(modId)
+        console.log(`📸 Найдено изображений галереи: ${galleryImages.length}`)
 
-        if (response.ok) {
-          const galleryImages = await response.json()
-          console.log(`📸 Найдено изображений галереи: ${galleryImages.length}`)
-
-          // Удаляем каждое изображение
-          for (const image of galleryImages) {
-            try {
-              await this.deleteGalleryImage(image)
-              console.log(`✅ Удалено изображение галереи: ${image.fileName}`)
-            } catch (error) {
-              console.warn(`⚠️ Не удалось удалить изображение ${image.id}:`, error.message)
-            }
+        // Удаляем каждое изображение
+        for (const image of galleryImages) {
+          try {
+            await this.deleteGalleryImage(image)
+            console.log(`✅ Удалено изображение галереи: ${image.fileName}`)
+          } catch (error) {
+            console.warn(`⚠️ Не удалось удалить изображение ${image.id}:`, error.message)
           }
         }
 
@@ -1267,31 +1124,18 @@ export default {
 
     // Метод для удаления одного изображения галереи
     async deleteGalleryImage(image) {
-      const token = localStorage.getItem('token')
-
-      // 1. Удаляем файл с сервера
+      // 1. Удаляем файл с сервера (если есть)
       if (image.imageUrl) {
         const fileName = image.imageUrl.split('/').pop()
-
         try {
-          await fetch(`${API_BASE}/Upload/gallery-image/${fileName}`, {
-            method: 'DELETE',
-            headers: {
-              'Authorization': token ? `Bearer ${token}` : ''
-            }
-          })
+          await filesApi.deleteGalleryImage(fileName)
         } catch (error) {
           console.warn(`⚠️ Ошибка удаления файла ${fileName}:`, error.message)
         }
       }
 
-      // 2. Удаляем запись из БД
-      await fetch(`${API_BASE}/modgalleries/${image.id}`, {
-        method: 'DELETE',
-        headers: {
-          'Authorization': token ? `Bearer ${token}` : ''
-        }
-      })
+      // 2. Удаляем запись из БД через API
+      await galleriesApi.delete(image.id)
     },
 
     // Модальное окно деталей
@@ -1363,6 +1207,60 @@ export default {
           this.availableDevelopers.push(data)
           break
       }
+    },
+
+    // Обработка обновления сущностей
+    handleEntitiesUpdated({ type, data, action, id }) {
+      console.log(`Сущность ${type} обновлена:`, data)
+
+      if (action === 'delete') {
+        // Удаляем из списков фильтров с проверкой
+        switch (type) {
+          case 'version':
+            if (this.availableVersions) {
+              this.availableVersions = this.availableVersions.filter(v => v.id !== id)
+            }
+            break
+          case 'modloader':
+            if (this.availableModLoaders) {
+              this.availableModLoaders = this.availableModLoaders.filter(m => m.id !== id)
+            }
+            break
+          case 'tag':
+            if (this.availableTags) {
+              this.availableTags = this.availableTags.filter(t => t.id !== id)
+            }
+            break
+          case 'developer':
+            if (this.availableDevelopers) {
+              this.availableDevelopers = this.availableDevelopers.filter(d => d.id !== id)
+            }
+            break
+        }
+      } else {
+        // Если не удаление, обновляем данные
+        this.refreshFilterData()
+      }
+    },
+
+    // Обновление данных фильтров
+    async refreshFilterData() {
+      try {
+        const [versions, modLoaders, tags, developers] = await Promise.all([
+          referencesApi.getVersions(),
+          referencesApi.getModLoaders(),
+          referencesApi.getTags(),
+          referencesApi.getDevelopers()
+        ])
+
+        this.availableVersions = versions.items || versions || []
+        this.availableModLoaders = modLoaders.items || modLoaders || []
+        this.availableTags = tags.items || tags || []
+        this.availableDevelopers = developers.items || developers || []
+
+      } catch (error) {
+        console.error('Ошибка обновления фильтров:', error)
+      }
     }
   },
 
@@ -1374,7 +1272,6 @@ export default {
 </script>
 
 <style scoped>
-
 /* Стили для EntitiesManager */
 .quick-add-container {
   display: flex;
@@ -1784,6 +1681,11 @@ export default {
   color: #2e7d32;
 }
 
+.developer-tag {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
 .clientside-tag {
   background: #fff3e0;
   color: #f57c00;
@@ -1791,7 +1693,6 @@ export default {
 
 .card-actions {
   display: flex;
-  justify-content: flex-end;
   gap: 10px;
 }
 
@@ -2125,7 +2026,9 @@ body {
 }
 
 .versions-list,
-.loaders-list {
+.loaders-list,
+.tags-list,
+.developers-list {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -2139,6 +2042,33 @@ body {
   font-size: 12px;
   font-weight: 500;
 }
+
+.developer-tag {
+  background: #f3e5f5;
+  color: #7b1fa2;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tag-tag {
+  background: #f3e5f5;
+  color: #7b1fa2;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.no-data {
+  color: #95a5a6;
+  font-size: 12px;
+  font-style: italic;
+}
+
 
 .loader-tag {
   background: #e8f5e9;
@@ -2331,10 +2261,12 @@ body {
   color: #555;
 }
 
+/* Исправлено горизонтальное отображение статистики */
 .modal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  /* Две колонки */
+  gap: 15px;
   margin: 25px 0;
 }
 
@@ -2342,10 +2274,11 @@ body {
   background: #f8f9fa;
   padding: 15px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-item strong {
-  display: block;
   color: #495057;
   margin-bottom: 5px;
   font-size: 14px;
@@ -2375,6 +2308,11 @@ body {
 .loader-tag {
   background: #e8f5e9;
   color: #2e7d32;
+}
+
+.developer-tag {
+  background: #f3e5f5;
+  color: #7b1fa2;
 }
 
 /* Галерея */
@@ -2628,5 +2566,21 @@ body {
   background: #fee;
   color: #c33;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .modal-grid {
+    grid-template-columns: 1fr;
+    /* Одна колонка на мобильных */
+  }
+
+  .mod-main-info {
+    flex-direction: column;
+  }
+
+  .mod-avatar-large {
+    width: 100%;
+    height: 200px;
+  }
 }
 </style>

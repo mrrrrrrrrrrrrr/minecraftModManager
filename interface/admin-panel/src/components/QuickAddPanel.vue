@@ -200,12 +200,12 @@ export default {
       
       // Текст кнопок
       buttonTexts: {
-        version: '+ Версия',
-        modloader: '+ Загрузчик',
-        tag: '+ Тег',
-        developer: '+ Разработчик',
-        difficulty: '+ Сложность',
-        focus: '+ Фокус'
+        version: 'нажми меня',
+        modloader: 'нажми меня',
+        tag: 'нажми меня',
+        developer: 'нажми меня',
+        difficulty: 'нажми меня',
+        focus: 'нажми меня'
       },
       
       // Оригинальные тексты кнопок (для восстановления)

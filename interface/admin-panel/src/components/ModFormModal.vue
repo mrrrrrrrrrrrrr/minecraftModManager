@@ -159,7 +159,7 @@
 <script>
 import DownloadSources from './DownloadSources.vue'
 import GalleryUpload from './GalleryUpload.vue'
-import { modsApi, filesApi } from '../api.js'
+import { modsApi, filesApi, referencesApi, galleriesApi, sourcesApi } from '../api.js'
 
 export default {
   name: 'ModFormModal',
@@ -230,31 +230,21 @@ export default {
   },
 
   methods: {
-    // Загрузка справочных данных
+    // ✅ Исправлено: используем referencesApi для загрузки справочных данных
     async loadReferenceData() {
       try {
-        const token = localStorage.getItem('token')
-
-        // Загружаем все справочники параллельно
+        // ✅ Используем API методы вместо прямых fetch
         const [versions, loaders, tags, developers] = await Promise.all([
-          fetch('http://localhost:5126/versions/getAll', {
-            headers: { 'Authorization': token ? `Bearer ${token}` : '' }
-          }),
-          fetch('http://localhost:5126/modLoaders/getAll', {
-            headers: { 'Authorization': token ? `Bearer ${token}` : '' }
-          }),
-          fetch('http://localhost:5126/tags/getAll', {
-            headers: { 'Authorization': token ? `Bearer ${token}` : '' }
-          }),
-          fetch('http://localhost:5126/developers/getAll', {
-            headers: { 'Authorization': token ? `Bearer ${token}` : '' }
-          })
+          referencesApi.getVersions(),
+          referencesApi.getModLoaders(),
+          referencesApi.getTags(),
+          referencesApi.getDevelopers()
         ])
 
-        this.availableVersions = await versions.json()
-        this.availableModLoaders = await loaders.json()
-        this.availableTags = await tags.json()
-        this.availableDevelopers = await developers.json()
+        this.availableVersions = versions
+        this.availableModLoaders = loaders
+        this.availableTags = tags
+        this.availableDevelopers = developers
 
       } catch (error) {
         console.error('Ошибка загрузки справочных данных:', error)
@@ -262,7 +252,7 @@ export default {
       }
     },
 
-    // Предзаполнение формы для редактирования
+    // ✅ Исправлено: используем API методы для предзаполнения формы
     async prefillForm() {
       try {
         console.log(`🔍 Предзаполняем форму для мода ${this.mod.id}`)
@@ -289,48 +279,34 @@ export default {
           console.log(`🖼️ Аватарка мода: ${this.imagePreview}`)
         }
 
-        // Загружаем источники скачивания
-        const token = localStorage.getItem('token')
-
-        // 🔥 ПАРАЛЛЕЛЬНАЯ ЗАГРУЗКА ГАЛЕРЕИ И ИСТОЧНИКОВ
+        // 🔥 ПАРАЛЛЕЛЬНАЯ ЗАГРУЗКА ГАЛЕРЕИ И ИСТОЧНИКОВ через API
         console.log('📥 Загружаем галерею и источники...')
 
-        const [sourcesResponse, galleryResponse] = await Promise.all([
-          fetch(`http://localhost:5126/download-sources/mod/${this.mod.id}`, {
-            headers: { 'Authorization': token ? `Bearer ${token}` : '' }
-          }).catch(err => {
-            console.error('❌ Ошибка загрузки источников:', err)
-            return { ok: false }
-          }),
-
-          fetch(`http://localhost:5126/modgalleries/mod/${this.mod.id}`, {
-            headers: { 'Authorization': token ? `Bearer ${token}` : '' }
-          }).catch(err => {
-            console.error('❌ Ошибка загрузки галереи:', err)
-            return { ok: false }
-          })
+        const [sourcesResult, galleryResult] = await Promise.allSettled([
+          sourcesApi.getByModId(this.mod.id),
+          galleriesApi.getByModId(this.mod.id)
         ])
 
         // Источники скачивания
-        if (sourcesResponse.ok) {
-          this.initialSources = await sourcesResponse.json()
+        if (sourcesResult.status === 'fulfilled') {
+          this.initialSources = sourcesResult.value || []
           console.log(`📦 Загружено источников: ${this.initialSources.length}`)
         } else {
-          console.warn('⚠️ Не удалось загрузить источники')
+          console.warn('⚠️ Не удалось загрузить источники:', sourcesResult.reason)
           this.initialSources = []
         }
 
         // Галерея
-        if (galleryResponse.ok) {
-          this.initialGallery = await galleryResponse.json()
+        if (galleryResult.status === 'fulfilled') {
+          this.initialGallery = galleryResult.value || []
           console.log(`📸 Загружено изображений галереи: ${this.initialGallery.length}`)
 
-          //  логируем URL изображений
+          // Логируем URL изображений
           this.initialGallery.forEach((img, index) => {
             console.log(`   ${index + 1}. ${img.imageUrl} (${img.fileName})`)
           })
         } else {
-          console.warn('⚠️ Не удалось загрузить галерею')
+          console.warn('⚠️ Не удалось загрузить галерею:', galleryResult.reason)
           this.initialGallery = []
         }
 
@@ -339,6 +315,7 @@ export default {
         this.showMessage('Ошибка загрузки данных мода', 'error')
       }
     },
+    
     // Обработка загрузки изображения
     triggerImageUpload() {
       this.$refs.imageInput.click()
@@ -366,26 +343,13 @@ export default {
       this.$refs.imageInput.value = ''
     },
 
-    // Загрузка изображения на сервер
+    // ✅ Исправлено: используем filesApi для загрузки изображения
     async uploadImage() {
       if (!this.imageFile) return null
 
       try {
-        const formData = new FormData()
-        formData.append('file', this.imageFile)
-
-        const token = localStorage.getItem('token')
-        const response = await fetch('http://localhost:5126/upload/image', {
-          method: 'POST',
-          headers: {
-            'Authorization': token ? `Bearer ${token}` : ''
-          },
-          body: formData
-        })
-
-        if (!response.ok) throw new Error('Ошибка загрузки изображения')
-
-        return await response.text()
+        // ✅ Используем API метод
+        return await filesApi.uploadImage(this.imageFile)
 
       } catch (error) {
         console.error('Ошибка загрузки изображения:', error)
@@ -393,20 +357,14 @@ export default {
       }
     },
 
-    // Удаление старого изображения
+    // ✅ Исправлено: используем filesApi для удаления изображения
     async deleteOldImage() {
       if (!this.existingImageUrl) return
 
       try {
         const fileName = this.existingImageUrl.split('/').pop()
-        const token = localStorage.getItem('token')
-
-        await fetch(`http://localhost:5126/upload/delete-image/${fileName}`, {
-          method: 'DELETE',
-          headers: {
-            'Authorization': token ? `Bearer ${token}` : ''
-          }
-        })
+        // ✅ Используем API метод
+        await filesApi.deleteImage(fileName)
 
       } catch (error) {
         console.error('Ошибка удаления старого изображения:', error)
@@ -434,122 +392,92 @@ export default {
       return true
     },
 
-    // В submitForm оставляем:
-async submitForm() {
-  if (!this.validateForm()) return;
-  
-  this.loading = true;
-  this.message = '';
-  
-  try {
-    // 1. Изображение
-    let imageUrl = null;
-    if (this.imageFile) {
-      imageUrl = await filesApi.uploadImage(this.imageFile);
+    // ✅ Упрощенный submitForm (убраны лишние методы)
+    async submitForm() {
+      if (!this.validateForm()) return;
       
-      // Удаляем старое если есть
-      if (this.isEditMode && this.existingImageUrl) {
-        const fileName = this.existingImageUrl.split('/').pop();
-        await filesApi.deleteImage(fileName);
+      this.loading = true;
+      this.message = '';
+      
+      try {
+        // 1. Изображение
+        let imageUrl = null;
+        if (this.imageFile) {
+          // ✅ Используем API метод
+          imageUrl = await filesApi.uploadImage(this.imageFile);
+          
+          // Удаляем старое если есть
+          if (this.isEditMode && this.existingImageUrl) {
+            const fileName = this.existingImageUrl.split('/').pop();
+            // ✅ Используем API метод
+            await filesApi.deleteImage(fileName);
+          }
+        } else if (this.isEditMode && !this.existingImageUrl && this.mod.imageUrl) {
+          // Пользователь удалил изображение
+          const fileName = this.mod.imageUrl.split('/').pop();
+          // ✅ Используем API метод
+          await filesApi.deleteImage(fileName);
+        } else if (this.existingImageUrl) {
+          imageUrl = this.existingImageUrl;
+        }
+        
+        // 2. Данные мода
+        const modData = {
+          ...this.form,
+          updatedAt: new Date().toISOString()
+        };
+        
+        if (!this.isEditMode) {
+          modData.createdAt = new Date().toISOString();
+        }
+        
+        if (imageUrl !== null) {
+          modData.imageUrl = imageUrl;
+        }
+        
+        // 3. Сохраняем мод через API
+        let createdModId = this.modId;
+        
+        if (this.isEditMode) {
+          // ✅ Используем API метод
+          await modsApi.update(createdModId, modData);
+        } else {
+          // ✅ Используем API метод
+          const result = await modsApi.create(modData);
+          createdModId = result.id;
+        }
+        
+        // 4. Обрабатываем источники (если есть)
+        if (this.$refs.downloadSources) {
+          await this.$refs.downloadSources.processSources(createdModId);
+        }
+        
+        // 5. Обрабатываем галерею (если есть)
+        if (this.$refs.galleryUpload) {
+          await this.$refs.galleryUpload.processGallery(createdModId);
+        }
+        
+        // Успех
+        this.showMessage(
+          this.isEditMode ? 'Мод успешно обновлен!' : 'Мод успешно добавлен!',
+          'success'
+        );
+        
+        setTimeout(() => {
+          this.$emit('saved', createdModId);
+          this.closeModal();
+        }, 2000);
+        
+      } catch (error) {
+        this.showMessage(`Ошибка: ${error.message}`, 'error');
+      } finally {
+        this.loading = false;
       }
-    } else if (this.isEditMode && !this.existingImageUrl && this.mod.imageUrl) {
-      // Пользователь удалил изображение
-      const fileName = this.mod.imageUrl.split('/').pop();
-      await filesApi.deleteImage(fileName);
-    } else if (this.existingImageUrl) {
-      imageUrl = this.existingImageUrl;
-    }
-    
-    // 2. Данные мода
-    const modData = {
-      ...this.form,
-      updatedAt: new Date().toISOString()
-    };
-    
-    if (!this.isEditMode) {
-      modData.createdAt = new Date().toISOString();
-    }
-    
-    if (imageUrl !== null) {
-      modData.imageUrl = imageUrl;
-    }
-    
-    // 3. Сохраняем мод
-    let createdModId = this.modId;
-    
-    if (this.isEditMode) {
-      await modsApi.update(createdModId, modData);
-    } else {
-      const result = await modsApi.create(modData);
-      createdModId = result.id;
-    }
-    
-    // 4. Обрабатываем источники (если есть)
-    if (this.$refs.downloadSources) {
-      await this.$refs.downloadSources.processSources(createdModId);
-    }
-    
-    // 5. Обрабатываем галерею (если есть)
-    if (this.$refs.galleryUpload) {
-      await this.$refs.galleryUpload.processGallery(createdModId);
-    }
-    
-    // Успех
-    this.showMessage(
-      this.isEditMode ? 'Мод успешно обновлен!' : 'Мод успешно добавлен!',
-      'success'
-    );
-    
-    setTimeout(() => {
-      this.$emit('saved', createdModId);
-      this.closeModal();
-    }, 2000);
-    
-  } catch (error) {
-    this.showMessage(`Ошибка: ${error.message}`, 'error');
-  } finally {
-    this.loading = false;
-  }
-},
-
-    // API методы
-    async createMod(modData) {
-      const token = localStorage.getItem('token')
-      const response = await fetch('http://localhost:5126/mods', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': token ? `Bearer ${token}` : ''
-        },
-        body: JSON.stringify(modData)
-      })
-
-      if (!response.ok) {
-        const error = await response.text()
-        throw new Error(error)
-      }
-
-      return await response.json()
     },
 
-    async updateMod(modId, modData) {
-      const token = localStorage.getItem('token')
-      const response = await fetch(`http://localhost:5126/mods/${modId}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': token ? `Bearer ${token}` : ''
-        },
-        body: JSON.stringify(modData)
-      })
-
-      if (!response.ok) {
-        const error = await response.text()
-        throw new Error(error)
-      }
-
-      return await response.json()
-    },
+    // ❌ УДАЛЯЕМ эти лишние методы, так как они уже есть в api.js
+    // async createMod(modData) { ... }
+    // async updateMod(modId, modData) { ... }
 
     // Показать сообщение
     showMessage(text, type) {
@@ -684,7 +612,7 @@ async submitForm() {
 .form-group input[type="text"],
 .form-group input[type="number"],
 .form-group textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 6px;
