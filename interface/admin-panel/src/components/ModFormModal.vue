@@ -2,7 +2,7 @@
   <div class="modal-overlay" @click.self="closeModal">
     <div class="modal large-modal">
       <div class="modal-header">
-        <h2>{{ isEditMode ? '✏️ Редактирование мода' : '➕ Добавление нового мода' }}</h2>
+        <h2>{{ isEditMode ? 'Редактирование мода' : 'Добавление нового мода' }}</h2>
         <button @click="closeModal" class="modal-close">×</button>
       </div>
 
@@ -60,7 +60,7 @@
               </div>
 
               <div v-else class="upload-placeholder" @click="triggerImageUpload">
-                <span>📷 Нажмите для загрузки изображения</span>
+                <span>Нажмите для загрузки изображения</span>
               </div>
 
               <input ref="imageInput" type="file" accept="image/*" @change="handleImageUpload" style="display: none" />

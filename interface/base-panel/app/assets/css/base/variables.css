@@ -1,0 +1,58 @@
+:root {
+    /* Цвета */
+    --primary-color: #ff6b6b;
+    --primary-hover: #ff5252;
+    --secondary-color: #4ecdc4;
+    --success-color: #6bff6b;
+    --danger-color: #ff6b6b;
+    --warning-color: #ffd93d;
+    
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --text-muted: #808080;
+    
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #3d3d3d;
+    --bg-hover: rgba(255, 255, 255, 0.1);
+    
+    --border-color: #000000;
+    --border-light: #404040;
+    
+    /* Тени */
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --shadow-heavy: 0 6px 0 #000000;
+    
+    /* Отступы */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    
+    /* Границы */
+    --border-radius: 0;
+    --border-radius-sm: 0;
+    --border-radius-lg: 0;
+    --border-minecraft: 4px solid #000000;
+    
+    /* Шрифты */
+    --font-minecraft: 'Minecraft', monospace;
+    --font-minecraft-title: 'Minecraft Title', 'Minecraft', sans-serif;
+    
+    /* Анимации */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Z-index */
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+    --z-index-cursor: 9999;
+}

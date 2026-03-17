@@ -1,0 +1,66 @@
+/* assets/css/main.css */
+
+/* Импорт переменных */
+@import './base/variables.css';
+
+/* Базовые стили */
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/animations.css';
+
+/* Компоненты */
+@import './components/common/AppButton.css';
+@import './components/common/AppModal.css';
+@import './components/common/CustomCursor.css';
+@import './components/common/Filters.css';
+@import './components/common/LoadMoreButton.css';
+@import './components/common/AnimatedBackground.css';
+@import './components/common/Pagination.css';
+
+
+@import './components/layout/AppHeader.css';
+@import './components/layout/LavaFrame.css';
+
+@import './components/mods/ModCard.css';
+@import './components/mods/ModDetails.css';
+@import './components/mods/ModGallery.css';
+@import './components/mods/ModsGrid.css';
+@import './components/mods/ModsTable.css';
+@import './components/mods/ModsViewToggle.css';
+@import './components/mods/ModTableRow.css';
+@import './components/mods/DownloadModal.css';
+
+/* Страницы */
+@import './pages/index.css';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Minecraft', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.5;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/fonts/minecraft.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minecraft Title';
+    src: url('/fonts/minecraft_title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

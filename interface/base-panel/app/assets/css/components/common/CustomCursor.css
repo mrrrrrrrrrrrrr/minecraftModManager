@@ -1,0 +1,17 @@
+.custom-cursor {
+    width: 32px;
+    height: 32px;
+    background: url('/images/cursor.png') center/contain no-repeat;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    image-rendering: pixelated;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 4px rgba(255, 107, 0, 0.5));
+}
+
+@media (pointer: coarse) {
+    .custom-cursor {
+        display: none;
+    }
+}

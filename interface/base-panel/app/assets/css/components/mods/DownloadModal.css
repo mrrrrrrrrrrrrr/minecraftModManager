@@ -1,0 +1,98 @@
+.download-modal .modal-content {
+    max-width: 900px;
+}
+
+.download-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.download-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.download-table-container {
+    overflow-x: auto;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+}
+
+.download-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.download-table th {
+    padding: 1rem;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 4px solid black;
+    font-family: "Minecraft";
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
+.download-table td {
+    padding: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.download-source-row {
+    background: 
+            linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+            url('/images/netherrack.png') center/10vh;
+    transition: all 0.3s ease;
+}
+
+.download-source-row:hover {
+    background: 
+            linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+            url('/images/warped_nylium.png') center/10vh;
+    transform: scale(1.01);
+    box-shadow: 0 0 0 3px white;
+}
+
+.versions-list, .modloaders-list {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+    text-shadow: 0 2px 0 black;
+}
+
+.download-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.download-actions .btn {
+    min-width: 120px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .download-table th {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .download-table td {
+        padding: 0.75rem;
+    }
+
+    .download-actions .btn {
+        min-width: 100px;
+        font-size: 0.8rem;
+    }
+}

@@ -3,7 +3,7 @@
     <!-- Кнопка открытия менеджера -->
     <div class="manager-header">
       <button @click="openManager" class="btn-manage">
-        📋 Управление элементами быстрого доступа
+        Управление элементами быстрого доступа
       </button>
     </div>
 
@@ -11,7 +11,7 @@
     <div v-if="showManager" class="modal-overlay" @click.self="closeManager">
       <div class="modal large-modal">
         <div class="modal-header">
-          <h2>📋 Управление сущностями</h2>
+          <h2>Управление сущностями</h2>
           <button @click="closeManager" class="modal-close">×</button>
         </div>
 
@@ -29,7 +29,7 @@
             <!-- Версии -->
             <div v-if="activeTab === 'versions'" class="entities-section">
               <div class="section-header">
-                <h3>🎮 Версии Minecraft</h3>
+                <h3>Версии Minecraft</h3>
                 <button @click="refreshData('versions')" class="btn-refresh">
                   🔄 Обновить
                 </button>
@@ -78,7 +78,7 @@
             <!-- Загрузчики -->
             <div v-if="activeTab === 'modloaders'" class="entities-section">
               <div class="section-header">
-                <h3>⚙️ Загрузчики модов</h3>
+                <h3>Загрузчики модов</h3>
                 <button @click="refreshData('modloaders')" class="btn-refresh">
                   🔄 Обновить
                 </button>
@@ -127,7 +127,7 @@
             <!-- Теги -->
             <div v-if="activeTab === 'tags'" class="entities-section">
               <div class="section-header">
-                <h3>🏷️ Теги</h3>
+                <h3>Теги</h3>
                 <button @click="refreshData('tags')" class="btn-refresh">
                   🔄 Обновить
                 </button>
@@ -173,7 +173,7 @@
             <!-- Разработчики -->
             <div v-if="activeTab === 'developers'" class="entities-section">
               <div class="section-header">
-                <h3>👨‍💻 Разработчики</h3>
+                <h3>Разработчики</h3>
                 <button @click="refreshData('developers')" class="btn-refresh">
                   🔄 Обновить
                 </button>
@@ -221,7 +221,7 @@
             <!-- Сложности -->
             <div v-if="activeTab === 'difficulties'" class="entities-section">
               <div class="section-header">
-                <h3>📊 Сложности</h3>
+                <h3>Сложности</h3>
                 <button @click="refreshData('difficulties')" class="btn-refresh">
                   🔄 Обновить
                 </button>
@@ -269,7 +269,7 @@
             <!-- Фокусы -->
             <div v-if="activeTab === 'focuses'" class="entities-section">
               <div class="section-header">
-                <h3>🎯 Фокусы (направления)</h3>
+                <h3>Фокусы (направления)</h3>
                 <button @click="refreshData('focuses')" class="btn-refresh">
                   🔄 Обновить
                 </button>
@@ -345,12 +345,12 @@ export default {
 
       // Вкладки
       tabs: [
-        { id: 'versions', name: '🎮 Версии' },
-        { id: 'modloaders', name: '⚙️ Загрузчики' },
-        { id: 'tags', name: '🏷️ Теги' },
-        { id: 'developers', name: '👨‍💻 Разработчики' },
-        { id: 'difficulties', name: '📊 Сложности' },
-        { id: 'focuses', name: '🎯 Фокусы' }
+        { id: 'versions', name: 'Версии' },
+        { id: 'modloaders', name: 'Загрузчики' },
+        { id: 'tags', name: 'Теги' },
+        { id: 'developers', name: 'Разработчики' },
+        { id: 'difficulties', name: 'Сложности' },
+        { id: 'focuses', name: 'Фокусы' }
       ],
 
       // Сущности

@@ -1,0 +1,189 @@
+/* assets/css/components/layout/LavaFrame.css */
+.lava-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Лавовые потоки - с контролем размера */
+.lava-flow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 140px;
+    pointer-events: none;
+    z-index: 10;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges; /* Для четкости пикселей */
+}
+
+.lava-left {
+    left: 40px;
+    background: url('/images/lava.gif') left center repeat-y;
+    background-size: 140px auto; /* Фиксированная ширина, высота автоматически */
+    background-position: left top;
+    background-repeat: repeat-y; /* Повторяем по вертикали */
+    filter: drop-shadow(0 0 15px rgba(255, 69, 0, 0.7));
+}
+
+.lava-right {
+    right: 40px;
+    background: url('/images/lava.gif') right center repeat-y;
+    background-size: 140px auto; /* Фиксированная ширина */
+    background-position: right top;
+    background-repeat: repeat-y; /* Повторяем по вертикали */
+    filter: drop-shadow(0 0 15px rgba(255, 69, 0, 0.7));
+}
+
+/* Затемнение для плавности */
+.lava-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    pointer-events: none;
+    z-index: 11;
+}
+
+.lava-overlay-left {
+    left: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.5) 40%,
+        transparent 90%
+    );
+}
+
+.lava-overlay-right {
+    right: 0;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.5) 40%,
+        transparent 90%
+    );
+}
+
+/* Контент с отступами */
+.lava-content {
+    position: relative;
+    z-index: 2;
+    padding-left: 320px;
+    padding-right: 320px;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+/* Адаптивность */
+@media (max-width: 1600px) {
+    .lava-flow {
+        width: 140px;
+    }
+    .lava-left {
+        left: 35px;
+        background-size: 140px auto;
+    }
+    .lava-right {
+        right: 35px;
+        background-size: 140px auto;
+    }
+    .lava-overlay {
+        width: 240px;
+    }
+    .lava-content {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .lava-flow {
+        width: 120px;
+    }
+    .lava-left {
+        left: 30px;
+        background-size: 120px auto;
+    }
+    .lava-right {
+        right: 30px;
+        background-size: 120px auto;
+    }
+    .lava-overlay {
+        width: 210px;
+    }
+    .lava-content {
+        padding-left: 260px;
+        padding-right: 260px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .lava-flow {
+        width: 100px;
+    }
+    .lava-left {
+        left: 25px;
+        background-size: 100px auto;
+    }
+    .lava-right {
+        right: 25px;
+        background-size: 100px auto;
+    }
+    .lava-overlay {
+        width: 190px;
+    }
+    .lava-content {
+        padding-left: 230px;
+        padding-right: 230px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lava-flow {
+        width: 80px;
+    }
+    .lava-left {
+        left: 20px;
+        background-size: 80px auto;
+    }
+    .lava-right {
+        right: 20px;
+        background-size: 80px auto;
+    }
+    .lava-overlay {
+        width: 140px;
+    }
+    .lava-content {
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lava-flow {
+        width: 60px;
+    }
+    .lava-left {
+        left: 15px;
+        background-size: 60px auto;
+    }
+    .lava-right {
+        right: 15px;
+        background-size: 60px auto;
+    }
+    .lava-overlay {
+        width: 110px;
+    }
+    .lava-content {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+}

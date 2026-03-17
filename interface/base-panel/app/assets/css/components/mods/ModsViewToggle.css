@@ -1,0 +1,37 @@
+.view-toggle {
+    display: flex;
+    background: linear-gradient(0deg, rgb(255, 69, 0), rgb(255, 165, 0));
+    border: solid black;
+    box-shadow: 0 6px 0 black;
+}
+
+.view-btn {
+    padding: 30px;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin: 3px;
+    background-size: 80% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.grid {
+    background: url('/images/grid_view.svg');
+}
+
+.list {
+    background: url('/images/list_view.svg');
+}
+
+.grid:hover, .list:hover {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1);
+}
+
+.view-btn.active {
+    filter: brightness(0) invert(1);
+    transform: scale(1.1);
+}

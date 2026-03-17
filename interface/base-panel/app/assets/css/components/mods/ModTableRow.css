@@ -1,0 +1,160 @@
+.table-row {
+  border-bottom: 1px solid #333;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.table-row td {
+  padding: 8px;
+  vertical-align: middle;
+  font-size: 0.85rem;
+}
+
+/* Заголовок */
+.title-cell {
+  padding-left: 16px !important;
+}
+
+.title-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.title {
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 130px;
+  display: block;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.badge.client {
+  background: rgba(78, 205, 196, 0.2);
+  border-color: #4ecdc4;
+}
+
+.badge.server {
+  background: rgba(255, 217, 61, 0.2);
+  border-color: #ffd93d;
+}
+
+/* Описание */
+.description-cell {
+  max-width: 200px;
+}
+
+.description {
+  display: block;
+  color: #b0b0b0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Теги */
+.versions-cell,
+.loaders-cell,
+.tags-cell {
+  max-width: 100px;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.tag {
+  padding: 2px 4px;
+  background: #2a2a2a;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  color: #ccc;
+  white-space: nowrap;
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 1;
+}
+
+.tag.more {
+  background: #333;
+  color: #ff6b6b;
+  flex-shrink: 0;
+}
+
+.no-data {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Размер */
+.size-cell {
+  color: #b0b0b0;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+/* Загрузки */
+.downloads-cell {
+  font-weight: 600;
+  color: #ff6b6b;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+/* Кнопки действий */
+.actions-cell {
+  white-space: nowrap;
+  padding-right: 16px !important;
+}
+
+.action-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: #b0b0b0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 2px;
+  font-size: 0.9rem;
+}
+
+.action-btn:hover {
+  background: #333;
+  transform: scale(1.1);
+}
+
+.action-btn.download:hover {
+  background: #ff6b6b;
+  color: white;
+}
+
+.action-btn.view:hover {
+  background: #4ecdc4;
+  color: white;
+}

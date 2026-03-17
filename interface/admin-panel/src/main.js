@@ -55,4 +55,4 @@ app.config.globalProperties.$downloadFile = async (fileName, downloadName) => {
 // Монтируем приложение
 app.mount('#app')
 
-console.log('✅ Vue приложение запущено!')
+console.log('вСЕ работает (вуе попущ...запущен)')

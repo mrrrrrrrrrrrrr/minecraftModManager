@@ -2,7 +2,7 @@
 <template>
   <div class="quick-add-panel">
     <div class="panel-header">
-      <h3>➕ Быстрое добавление</h3>
+      <h3>Быстрое добавление</h3>
       <button @click="togglePanel" class="toggle-btn">
         {{ isExpanded ? '▲ Свернуть' : '▼ Развернуть' }}
       </button>

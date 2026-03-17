@@ -1,0 +1,83 @@
+.mods-table {
+  width: 100%;
+  min-height: 400px;
+}
+
+/* Состояния */
+.mods-table-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  border-radius: 16px;
+  border: 2px solid #333;
+  text-align: center;
+  color: #b0b0b0;
+}
+
+.state-spinner {
+  font-size: 3rem;
+  animation: spin 2s linear infinite;
+  margin-bottom: 16px;
+}
+
+.state-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 2px solid #333;
+  background: #1a1a1a;
+  width: calc(100% + 40px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px; /* Минимальная ширина, но уже комфортная */
+}
+
+.table th {
+  padding: 12px 8px;
+  text-align: left;
+  background: #2a2a2a;
+  color: #ff6b6b;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #333;
+  white-space: nowrap;
+}
+
+.table th:first-child {
+  padding-left: 16px;
+}
+
+.table th:last-child {
+  padding-right: 16px;
+}
+
+/* Фиксированное распределение ширины колонок */
+.table th:nth-child(1) { width: 18%; } /* Название */
+.table th:nth-child(2) { width: 22%; } /* Описание */
+.table th:nth-child(3) { width: 10%; } /* Версии */
+.table th:nth-child(4) { width: 10%; } /* Модлоадеры */
+.table th:nth-child(5) { width: 10%; } /* Теги */
+.table th:nth-child(6) { width: 8%; }  /* Размер */
+.table th:nth-child(7) { width: 8%; }  /* Загрузки */
+.table th:nth-child(8) { width: 14%; } /* Действия */

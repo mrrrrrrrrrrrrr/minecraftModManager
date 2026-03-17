@@ -1,0 +1,271 @@
+/* ===== ДЕТАЛИ МОДА ===== */
+
+.modal-mod-details {
+    max-width: 1200px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mod-details-content {
+    background: linear-gradient(180deg, rgba(2, 0, 15, 0.8), rgba(25, 16, 0, 0.8)),
+                url('/images/basalt_side.png') center/9%;
+    image-rendering: pixelated;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    min-height: 0;
+}
+
+/* Шапка с изображением */
+.mod-details-header {
+    display: flex;
+    gap: var(--spacing-lg);
+    background: rgba(0, 0, 0, 0.3);
+    padding: var(--spacing-lg);
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+}
+
+.mod-details-image {
+    width: 200px;
+    height: 200px;
+    background: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.mod-details-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mod-details-info {
+    flex: 1;
+}
+
+.mod-details-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin: 0 0 var(--spacing-sm) 0;
+    text-shadow: 0 5px 0 black;
+    font-family: "Minecraft";
+}
+
+.mod-details-developer {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin: 0 0 var(--spacing-md) 0;
+    font-style: italic;
+    text-shadow: 0 3px 0 black;
+}
+
+.mod-details-description-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--primary-color);
+}
+
+.mod-details-description {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin: 0;
+    white-space: pre-line;
+    word-wrap: break-word;
+    line-height: 1.6;
+}
+
+/* Статистика */
+.mod-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-md);
+    margin: 0;
+}
+
+.mod-details-stat {
+    background: url('/images/soulsang_card.png') center/100% 100%;
+    padding: 20% 5% 10% 5%;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 0 black;
+    border: 4px solid black;
+    image-rendering: pixelated;
+}
+
+.mod-details-stat:hover {
+    transform: scale(1.1);
+}
+
+.mod-details-stat-value {
+    font-size: 1.5rem;
+    color: rgb(217, 28, 28);
+    margin-bottom: var(--spacing-sm);
+    text-shadow: 0 3px 0 black;
+    font-family: "Minecraft";
+}
+
+.mod-details-stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    text-shadow: 0 2px 0 black;
+}
+
+/* Секции */
+.mod-details-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.mod-details-section {
+    background:
+            url('/images/chiseled_nether_bricks.png') repeat-y right/10vh,
+            url('/images/nether_bricks.png') top/10vh;
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    padding: 3%;
+    image-rendering: pixelated;
+}
+
+.mod-details-section-title {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin: 0 0 var(--spacing-md) 0;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-shadow: 0 3px 0 black;
+    font-family: "Minecraft";
+}
+
+/* Теги, версии, загрузчики */
+.mod-details-tags-container,
+.mod-details-loaders-container,
+.mod-details-versions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.mod-details-tag {
+    background:
+            linear-gradient(0, rgba(0, 255, 255, 1), rgba(0, 0, 0, 0)),
+            url('/images/ice.png') center/9vh;
+    color: black;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: solid black;
+    box-shadow: 0 6px 0 black;
+    image-rendering: pixelated;
+}
+
+.mod-details-tag:hover {
+    transform: scale(1.1);
+}
+
+.mod-details-loader {
+    background:
+            linear-gradient(0, rgba(255, 255, 0, 1), rgba(0, 0, 0, 0)),
+            url('/images/red_sand.png') center/9vh;
+    color: black;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: solid black;
+    box-shadow: 0 6px 0 black;
+    image-rendering: pixelated;
+}
+
+.mod-details-loader:hover {
+    transform: scale(1.1);
+}
+
+.mod-details-version {
+    background:
+            linear-gradient(0, rgba(0, 255, 0, 1), rgba(0, 0, 0, 0)),
+            url('/images/moss_block.png') center/9vh;
+    color: black;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: solid black;
+    box-shadow: 0 6px 0 black;
+    image-rendering: pixelated;
+}
+
+.mod-details-version:hover {
+    transform: scale(1.1);
+}
+
+/* Кнопки действий */
+.mod-details-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: flex-end;
+    padding-top: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    border-top: 4px solid black;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .mod-details-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mod-details-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mod-details-title {
+        font-size: 1.5rem;
+    }
+
+    .mod-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mod-details-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mod-details-actions .btn {
+        flex: 1;
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mod-details-content {
+        padding: var(--spacing-md);
+    }
+
+    .mod-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mod-details-actions {
+        flex-direction: column;
+    }
+
+    .mod-details-actions .btn {
+        width: 100%;
+    }
+}

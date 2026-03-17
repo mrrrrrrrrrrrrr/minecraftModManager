@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="animated-gradient" id="app">
     <header class="header">
       <div>
         <h1>KapiMods</h1>
@@ -13,26 +13,27 @@
       </div>
     </header>
 
-    <!-- Основной контент -->
+    <!-- Панель администратора - отображается только для авторизованных пользователей -->
     <main class="main" v-if="isAuthenticated">
-      <!-- Состояние загрузки -->
+      <!-- Индикатор загрузки данных -->
       <div v-if="loading && !searchLoading" class="loading">
         <div class="spinner"></div>
         <p>Загрузка модов...</p>
       </div>
 
-      <!-- Состояние ошибки -->
+      <!-- Отображение ошибки с возможностью повтора -->
       <div v-else-if="error" class="error">
         <p>❌ Ошибка: {{ error }}</p>
         <button @click="performSearch" class="retry-btn">Повторить</button>
       </div>
 
-      <!-- Основной контент -->
+      <!-- Основная панель управления модами -->
       <div v-else>
-        <!-- Контейнер поиска и фильтров -->
+        <!-- Блок поиска и фильтрации модов -->
         <div class="search-filters-container">
           <div class="search-header">
             <div class="search-input-group">
+              <!-- Переключатель между сеткой и списком -->
               <div class="view-toggle">
                 <button class="view-btn grid" :class="{ active: viewMode === 'grid' }" @click="switchView('grid')"
                   title="Сетка">
@@ -44,35 +45,41 @@
                 </button>
               </div>
 
+              <!-- Поле ввода для поиска по названию или описанию -->
               <input v-model="searchQuery" @input="handleSearchInput" placeholder="Поиск модов..."
                 class="search-input" />
 
+              <!-- Кнопка открытия/закрытия расширенных фильтров -->
               <button @click="toggleFilters" class="btn-toggle-filters" :class="{ active: showFiltersPanel }">
                 {{ showFiltersPanel ? 'Закрыть фильтры' : 'Фильтры' }}
               </button>
 
+              <!-- Быстрый сброс активных фильтров -->
               <button v-if="hasActiveFilters" @click="resetFilters" class="btn-reset-filters">
                 Сбросить
               </button>
 
+              <!-- Кнопка создания нового мода -->
               <button @click="showModForm = true; selectedModForEdit = null" class="add-btn">
                 Добавить мод
               </button>
             </div>
 
+            <!-- Информация о количестве найденных модов -->
             <div class="search-results-info">
               {{ getResultsInfo() }}
             </div>
 
+            <!-- Индикатор выполнения поиска -->
             <div v-if="searchLoading" class="search-loading">
               🔍 Поиск...
             </div>
           </div>
 
-          <!-- Панель фильтров -->
+          <!-- Панель расширенных фильтров -->
           <div v-if="showFiltersPanel" class="filters-panel">
             <div class="filters-grid">
-              <!-- Версии -->
+              <!-- Фильтр по версиям Minecraft -->
               <div class="filter-group">
                 <label>Версии Minecraft</label>
                 <div class="filter-options">
@@ -84,7 +91,7 @@
                 </div>
               </div>
 
-              <!-- Загрузчики -->
+              <!-- Фильтр по загрузчикам модов (Forge, Fabric и т.д.) -->
               <div class="filter-group">
                 <label>Загрузчики модов</label>
                 <div class="filter-options">
@@ -96,7 +103,7 @@
                 </div>
               </div>
 
-              <!-- Теги -->
+              <!-- Фильтр по тегам/категориям модов -->
               <div class="filter-group">
                 <label>Теги</label>
                 <div class="filter-options">
@@ -108,7 +115,7 @@
                 </div>
               </div>
 
-              <!-- Разработчики -->
+              <!-- Фильтр по разработчикам модов -->
               <div class="filter-group">
                 <label>Разработчики</label>
                 <div class="filter-options">
@@ -120,7 +127,7 @@
                 </div>
               </div>
 
-              <!-- Тип мода -->
+              <!-- Фильтр по типу мода (клиентский/серверный) -->
               <div class="filter-group">
                 <label>Тип мода</label>
                 <div class="filter-options">
@@ -142,7 +149,7 @@
                 </div>
               </div>
 
-              <!-- Числовые фильтры -->
+              <!-- Числовые фильтры (скачивания, размер) -->
               <div class="filter-group">
                 <label>Минимум скачиваний</label>
                 <input type="number" v-model.number="filters.minDownloads" min="0" @input="debouncedApplyFilters"
@@ -154,6 +161,7 @@
               </div>
             </div>
 
+            <!-- Кнопки управления фильтрами -->
             <div class="filter-actions">
               <button @click="applyFilters" class="btn-apply-filters">
                 Применить фильтры
@@ -164,7 +172,7 @@
             </div>
           </div>
 
-          <!-- Пагинация -->
+          <!-- Навигация по страницам результатов -->
           <div v-if="totalPages > 1" class="pagination">
             <button @click="prevPage" :disabled="currentPage === 1" class="page-btn">
               ← Назад
@@ -180,10 +188,10 @@
           </div>
         </div>
 
-        <!-- Режим отображения: Сетка -->
+        <!-- Отображение модов в виде карточек (режим сетки) -->
         <div v-if="viewMode === 'grid' && mods.length > 0" class="mods-grid">
           <div v-for="mod in sortedMods" :key="mod.id" class="mod-card">
-            <!-- Верхняя часть карточки -->
+            <!-- Верхняя часть карточки с аватаркой и заголовком -->
             <div class="card-header">
               <div class="card-avatar" @click="viewModDetails(mod)">
                 <img v-if="mod.imageUrl" :src="getFullImageUrl(mod.imageUrl)" :alt="mod.title"
@@ -200,12 +208,12 @@
               </div>
             </div>
 
-            <!-- Описание -->
+            <!-- Краткое описание мода -->
             <div class="card-description">
               {{ truncateDescription(mod.description) }}
             </div>
 
-            <!-- Теги и версии -->
+            <!-- Теги и метки (версии, загрузчики, тип) -->
             <div class="card-tags">
               <span v-for="version in (mod.versions || []).slice(0, 2)" :key="version.id" class="tag version-tag">
                 {{ version.title }}
@@ -215,14 +223,14 @@
               </span>
               <span v-if="mod.isClientside" class="tag clientside-tag">Клиентский</span>
 
-              <!-- ДОБАВЛЯЕМ РАЗРАБОТЧИКОВ В СЕТКЕ -->
+              <!-- Информация о разработчиках в карточке -->
               <span v-for="developer in (mod.developers || []).slice(0, 1)" :key="developer.id"
                 class="tag developer-tag">
                 👨‍💻 {{ developer.nickname }}
               </span>
             </div>
 
-            <!-- Действия -->
+            <!-- Кнопки управления модом -->
             <div class="card-actions">
               <button @click="viewModDetails(mod)" class="btn-view" title="Подробнее">
                 👁️ Подробно
@@ -237,11 +245,12 @@
           </div>
         </div>
 
-        <!-- Режим отображения: Таблица -->
+        <!-- Отображение модов в виде таблицы (режим списка) -->
         <div v-if="viewMode === 'list' && mods.length > 0" class="mods-table-container">
           <table class="mods-table">
             <thead>
               <tr>
+                <!-- Заголовки таблицы с возможностью сортировки -->
                 <th @click="sortBy('title')" class="sortable">
                   Название
                   <span v-if="sortByField === 'title'">
@@ -260,13 +269,14 @@
                 <th>Версии</th>
                 <th>Загрузчики</th>
                 <th>Теги</th>
-                <!-- ДОБАВЛЯЕМ КОЛОНКУ РАЗРАБОТЧИКОВ -->
+                <!-- Колонка для разработчиков -->
                 <th>Разработчики</th>
                 <th>Действия</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="mod in sortedMods" :key="mod.id">
+                <!-- Название и описание мода -->
                 <td>
                   <div class="mod-title">
                     {{ mod.title || 'Без названия' }}
@@ -275,6 +285,7 @@
                     {{ truncateDescription(mod.description) }}
                   </div>
                 </td>
+                <!-- Аватарка мода -->
                 <td>
                   <div class="avatar-preview" @click="viewModDetails(mod)" title="Нажмите для просмотра">
                     <img v-if="mod.imageUrl" :src="getFullImageUrl(mod.imageUrl)" :alt="mod.title" class="mod-avatar"
@@ -284,15 +295,19 @@
                     </div>
                   </div>
                 </td>
+                <!-- Статистика скачиваний -->
                 <td class="downloads-cell">
                   {{ formatNumber(mod.downloads) }}
                 </td>
+                <!-- Размер файла -->
                 <td>{{ mod.size || '0' }}</td>
+                <!-- Индикатор клиентской/серверной стороны -->
                 <td>
                   <span :class="mod.isClientside ? 'clientside-yes' : 'clientside-no'">
                     {{ mod.isClientside ? '✅ Да' : '❌ Нет' }}
                   </span>
                 </td>
+                <!-- Список поддерживаемых версий Minecraft -->
                 <td>
                   <div class="versions-list">
                     <span v-for="version in (mod.versions || []).slice(0, 3)" :key="version.id" class="version-tag">
@@ -303,6 +318,7 @@
                     </span>
                   </div>
                 </td>
+                <!-- Список загрузчиков -->
                 <td>
                   <div class="loaders-list">
                     <span v-for="loader in (mod.modLoaders || []).slice(0, 2)" :key="loader.id" class="loader-tag">
@@ -313,6 +329,7 @@
                     </span>
                   </div>
                 </td>
+                <!-- Список тегов -->
                 <td>
                   <div class="tags-list">
                     <span v-for="tag in (mod.tags || []).slice(0, 2)" :key="tag.id" class="tag-tag">
@@ -326,7 +343,7 @@
                     </span>
                   </div>
                 </td>
-                <!-- ДОБАВЛЯЕМ ЯЧЕЙКУ ДЛЯ РАЗРАБОТЧИКОВ -->
+                <!-- Информация о разработчиках -->
                 <td>
                   <div class="developers-list">
                     <span v-for="developer in (mod.developers || []).slice(0, 2)" :key="developer.id"
@@ -341,6 +358,7 @@
                     </span>
                   </div>
                 </td>
+                <!-- Кнопки действий -->
                 <td class="actions-cell">
                   <button @click="viewModDetails(mod)" class="btn-view" title="Просмотр деталей">
                     👁️
@@ -357,7 +375,7 @@
           </table>
         </div>
 
-        <!-- Нет результатов -->
+        <!-- Сообщение об отсутствии результатов -->
         <div v-if="mods.length === 0 && !loading && !searchLoading" class="no-results">
           <p>📭 Модов не найдено</p>
           <button @click="resetFilters" class="btn-reset-all">
@@ -365,7 +383,7 @@
           </button>
         </div>
 
-        <!-- Информация о результатах -->
+        <!-- Статистика по результатам поиска -->
         <div v-if="mods.length > 0" class="stats">
           <p>Всего модов: {{ totalMods }}</p>
           <p>Показано: {{ mods.length }}</p>
@@ -374,7 +392,7 @@
         </div>
       </div>
 
-      <!-- Модальное окно с деталями мода -->
+      <!-- Детальная информация о моде (всплывающее окно) -->
       <div v-if="selectedMod" class="modal-overlay" @click.self="closeModal">
         <div class="modal">
           <div class="modal-header">
@@ -383,10 +401,10 @@
           </div>
 
           <div class="modal-body">
-            <!-- Основная информация -->
+            <!-- Основная информация о моде -->
             <div class="modal-section">
               <div class="mod-main-info">
-                <!-- Аватарка -->
+                <!-- Крупное изображение мода -->
                 <div class="mod-avatar-large">
                   <img v-if="selectedMod.imageUrl" :src="getFullImageUrl(selectedMod.imageUrl)" :alt="selectedMod.title"
                     @error="handleImageError" />
@@ -395,7 +413,7 @@
                   </div>
                 </div>
 
-                <!-- Описание -->
+                <!-- Полное описание мода -->
                 <div class="mod-description-full">
                   <h3>Описание</h3>
                   <p>{{ selectedMod.description || 'Нет описания' }}</p>
@@ -403,7 +421,7 @@
               </div>
             </div>
 
-            <!-- Статистика - ИСПРАВЛЕНА ГОРИЗОНТАЛЬНАЯ ВЕРСТКА -->
+            <!-- Статистические данные мода -->
             <div class="modal-grid">
               <div class="modal-item">
                 <strong>Загрузки:</strong>
@@ -425,7 +443,7 @@
               </div>
             </div>
 
-            <!-- Версии -->
+            <!-- Поддерживаемые версии Minecraft -->
             <div class="modal-section" v-if="selectedMod.versions && selectedMod.versions.length">
               <h3>Версии Minecraft</h3>
               <div class="tags-list">
@@ -435,7 +453,7 @@
               </div>
             </div>
 
-            <!-- Теги -->
+            <!-- Теги мода -->
             <div class="modal-section" v-if="selectedMod.tags && selectedMod.tags.length">
               <h3>Теги</h3>
               <div class="tags-list">
@@ -445,7 +463,7 @@
               </div>
             </div>
 
-            <!-- Разработчики - ДОБАВЛЕНО -->
+            <!-- Разработчики мода -->
             <div class="modal-section" v-if="selectedMod.developers && selectedMod.developers.length">
               <h3>Разработчики</h3>
               <div class="tags-list">
@@ -455,7 +473,7 @@
               </div>
             </div>
 
-            <!-- Загрузчики -->
+            <!-- Загрузчики модов -->
             <div class="modal-section" v-if="selectedMod.modLoaders && selectedMod.modLoaders.length">
               <h3>Загрузчики модов</h3>
               <div class="tags-list">
@@ -465,7 +483,7 @@
               </div>
             </div>
 
-            <!-- Галерея изображений -->
+            <!-- Галерея изображений мода -->
             <div class="modal-section" v-if="galleryLoading">
               <h3>Галерея</h3>
               <p>Загрузка изображений...</p>
@@ -482,7 +500,7 @@
               </div>
             </div>
 
-            <!-- Источники скачивания -->
+            <!-- Источники для скачивания мода -->
             <div class="modal-section" v-if="sourcesLoading">
               <h3>Источники скачивания</h3>
               <p>Загрузка источников...</p>
@@ -498,7 +516,7 @@
                     </span>
                   </div>
 
-                  <!-- Файл для скачивания -->
+                  <!-- Ссылка на локальный файл -->
                   <div v-if="source.filePath" class="file-source">
                     <p><strong>Файл:</strong> {{ source.fileName }}</p>
                     <button @click="downloadFile(source)" class="download-btn">
@@ -506,7 +524,7 @@
                     </button>
                   </div>
 
-                  <!-- Внешняя ссылка -->
+                  <!-- Внешняя ссылка на скачивание -->
                   <div v-if="source.url" class="url-source">
                     <p><strong>Ссылка:</strong></p>
                     <a :href="source.url" target="_blank" class="external-link">
@@ -514,7 +532,7 @@
                     </a>
                   </div>
 
-                  <!-- Версии и загрузчики для этого источника -->
+                  <!-- Совместимость с версиями и загрузчиками -->
                   <div class="source-tags">
                     <div v-if="source.versions && source.versions.length" class="source-versions">
                       <strong>Версии:</strong>
@@ -534,7 +552,7 @@
               </div>
             </div>
 
-            <!-- Сообщение если нет галереи или источников -->
+            <!-- Уведомления об отсутствии данных -->
             <div class="modal-section" v-if="!galleryLoading && galleryImages.length === 0">
               <h3>Галерея</h3>
               <p class="empty-message">📷 Нет изображений галереи</p>
@@ -546,6 +564,7 @@
             </div>
           </div>
 
+          <!-- Кнопки управления в модальном окне -->
           <div class="modal-footer">
             <button @click="editMod(selectedMod)" class="btn-edit-large">
               ✏️ Редактировать мод
@@ -557,14 +576,14 @@
         </div>
       </div>
 
-      <!-- Панель быстрого добавления -->
+      <!-- Панель быстрого добавления справочных элементов -->
         <QuickAddPanel @item-added="handleItemAdded" />
         <EntitiesManager @entities-updated="handleEntitiesUpdated" />
     </main>
 
-    <!-- Сообщение если не авторизован -->
+    <!-- Страница для неавторизованных пользователей -->
     <div v-else class="not-authorized">
-      <h2>🔐 Требуется авторизация</h2>
+      <h2>Требуется авторизация</h2>
       <p>Для работы с админ-панелью необходимо войти в систему</p>
       <button @click="showAuthModal = true" class="login-btn">
         Войти
@@ -574,10 +593,10 @@
     <!-- Модальное окно авторизации -->
     <AuthModal v-if="showAuthModal" @close="showAuthModal = false" @login-success="handleLoginSuccess" />
 
-    <!-- Модальное окно формы мода -->
+    <!-- Модальное окно редактирования/создания мода -->
     <ModFormModal v-if="showModForm" :mod="selectedModForEdit" @close="closeModForm" @saved="handleModSaved" />
 
-    <!-- Lightbox для изображений галереи -->
+    <!-- Увеличенный просмотр изображения галереи -->
     <div v-if="lightboxImage" class="lightbox-overlay" @click.self="closeLightbox">
       <div class="lightbox">
         <button @click="closeLightbox" class="lightbox-close">×</button>
@@ -597,6 +616,7 @@ import QuickAddPanel from './components/QuickAddPanel.vue'
 import ModFormModal from './components/ModFormModal.vue'
 import EntitiesManager from './components/EntitiesManager.vue'
 
+// Базовый URL для API
 const API_BASE = 'http://localhost:5126'
 
 export default {
@@ -611,31 +631,31 @@ export default {
 
   data() {
     return {
-      // Данные
-      mods: [],
-      selectedMod: null,
-      galleryImages: [],
-      downloadSources: [],
-      lightboxImage: null,
+      // Основные данные
+      mods: [],                       // Список отображаемых модов
+      selectedMod: null,              // Выбранный мод для просмотра деталей
+      galleryImages: [],              // Изображения галереи для текущего мода
+      downloadSources: [],             // Источники скачивания для текущего мода
+      lightboxImage: null,             // Изображение для увеличенного просмотра
 
-      // Состояние загрузки
-      loading: true,
-      searchLoading: false,
-      loadingFilterData: true,
-      galleryLoading: false,
-      sourcesLoading: false,
-      error: null,
+      // Состояния загрузки
+      loading: true,                   // Индикатор первоначальной загрузки
+      searchLoading: false,             // Индикатор выполнения поиска
+      loadingFilterData: true,          // Загрузка данных для фильтров
+      galleryLoading: false,            // Загрузка галереи
+      sourcesLoading: false,            // Загрузка источников
+      error: null,                      // Текст ошибки
 
       // Пагинация и поиск
-      currentPage: 1,
-      pageSize: 3,
-      totalMods: 0,
-      totalPages: 1,
-      searchQuery: '',
-      searchTimeout: null,
-      filtersTimeout: null,
+      currentPage: 1,                   // Текущая страница
+      pageSize: 3,                      // Элементов на странице
+      totalMods: 0,                      // Общее количество модов
+      totalPages: 1,                     // Всего страниц
+      searchQuery: '',                   // Текст поиска
+      searchTimeout: null,                // Таймер для отложенного поиска
+      filtersTimeout: null,               // Таймер для отложенного применения фильтров
 
-      // Фильтры
+      // Параметры фильтрации
       filters: {
         search: '',
         versionIds: [],
@@ -646,33 +666,34 @@ export default {
         minDownloads: 0,
         maxSize: 0
       },
-      showFiltersPanel: false,
-      viewMode: 'list', // 'grid' или 'list'
+      showFiltersPanel: false,           // Отображение панели фильтров
+      viewMode: 'list',                   // Режим отображения: 'grid' или 'list'
 
-      // Справочные данные
-      availableVersions: [],
-      availableModLoaders: [],
-      availableTags: [],
-      availableDevelopers: [],
+      // Справочные данные для фильтров
+      availableVersions: [],              // Доступные версии Minecraft
+      availableModLoaders: [],             // Доступные загрузчики модов
+      availableTags: [],                    // Доступные теги
+      availableDevelopers: [],               // Доступные разработчики
 
-      // Сортировка
-      sortByField: 'createdAt',
-      sortOrder: 'desc',
+      // Параметры сортировки
+      sortByField: 'createdAt',            // Поле для сортировки
+      sortOrder: 'desc',                    // Направление сортировки
 
       // Авторизация
-      isAuthenticated: false,
-      showAuthModal: false,
+      isAuthenticated: false,               // Статус авторизации
+      showAuthModal: false,                  // Отображение модального окна авторизации
 
-      // Формы
-      showModForm: false,
-      selectedModForEdit: null,
+      // Управление формами
+      showModForm: false,                     // Отображение формы мода
+      selectedModForEdit: null,                // Мод для редактирования
 
-      // Трекер скачиваемых файлов
-      downloadingFiles: {}
+      // Состояние скачивания файлов
+      downloadingFiles: {}                     // ID файлов, которые скачиваются
     }
   },
 
   computed: {
+    // Проверка наличия активных фильтров
     hasActiveFilters() {
       return (
         this.searchQuery.trim() ||
@@ -686,6 +707,7 @@ export default {
       )
     },
 
+    // Подсчет количества активных фильтров
     activeFiltersCount() {
       let count = 0
       if (this.searchQuery.trim()) count++
@@ -699,6 +721,7 @@ export default {
       return count
     },
 
+    // Отсортированный список модов
     sortedMods() {
       return [...this.mods].sort((a, b) => {
         let aVal = a[this.sortByField]
@@ -717,12 +740,12 @@ export default {
   },
 
   mounted() {
-    // Проверяем авторизацию при загрузке
+    // Проверка авторизации при загрузке компонента
     this.checkAuth()
   },
 
   methods: {
-    // Проверка авторизации
+    // Проверка наличия токена авторизации
     checkAuth() {
       const token = localStorage.getItem('token')
       if (token) {
@@ -748,20 +771,13 @@ export default {
         this.availableTags = tags.items || tags || []
         this.availableDevelopers = developers.items || developers || []
 
-        console.log('✅ Данные фильтров загружены:', {
-          versions: this.availableVersions.length,
-          loaders: this.availableModLoaders.length,
-          tags: this.availableTags.length,
-          developers: this.availableDevelopers.length
-        })
-
-        // После загрузки фильтров загружаем моды
+        // После загрузки фильтров выполняем поиск модов
         await this.performSearch()
 
       } catch (error) {
-        console.error('❌ Ошибка загрузки данных фильтров:', error)
+        console.error('Ошибка загрузки данных фильтров:', error)
         this.error = 'Ошибка загрузки фильтров'
-        // Все равно пытаемся загрузить моды
+        // Пытаемся загрузить моды даже без фильтров
         await this.performSearch()
       } finally {
         this.loadingFilterData = false
@@ -769,7 +785,7 @@ export default {
       }
     },
 
-    // Выполнение поиска с текущими фильтрами
+    // Выполнение поиска с текущими параметрами фильтрации
     async performSearch() {
       if (!this.isAuthenticated) return
 
@@ -777,7 +793,7 @@ export default {
       this.error = null
 
       try {
-        // Подготавливаем параметры для запроса
+        // Формируем параметры запроса
         const searchParams = {
           pageNumber: this.currentPage,
           pageSize: this.pageSize,
@@ -793,21 +809,17 @@ export default {
           orderBy: this.sortOrder
         }
 
-        console.log('🔍 Выполняем поиск с параметрами:', searchParams)
-
-        // Используем searchMods из api.js
+        // Отправляем запрос на сервер
         const result = await modsApi.searchMods(searchParams)
 
         this.mods = Array.isArray(result.items) ? result.items : []
         this.totalMods = result.totalCount || 0
         this.totalPages = Math.ceil(this.totalMods / this.pageSize)
 
-        console.log(`✅ Найдено модов: ${this.totalMods}, показано: ${this.mods.length}`)
-
       } catch (error) {
-        console.error('❌ Ошибка поиска:', error)
+        console.error('Ошибка поиска:', error)
         this.error = error.message || 'Ошибка при поиске модов'
-        // Если поиск не работает, используем getAll как fallback
+        // Запасной вариант - загрузка всех модов
         await this.loadAllMods()
       } finally {
         this.searchLoading = false
@@ -815,7 +827,7 @@ export default {
       }
     },
 
-    // Fallback метод: загрузка всех модов
+    // Загрузка всех модов (запасной метод)
     async loadAllMods() {
       try {
         const allMods = await modsApi.getAll()
@@ -827,18 +839,19 @@ export default {
       }
     },
 
-    // Обработчик ввода поиска
+    // Обработка ввода текста поиска
     handleSearchInput() {
       this.currentPage = 1
       this.filters.search = this.searchQuery.trim()
 
+      // Отложенный поиск для уменьшения нагрузки
       if (this.searchTimeout) clearTimeout(this.searchTimeout)
       this.searchTimeout = setTimeout(() => {
         this.performSearch()
       }, 500)
     },
 
-    // Дебаунс для фильтров
+    // Отложенное применение фильтров
     debouncedApplyFilters() {
       if (this.filtersTimeout) clearTimeout(this.filtersTimeout)
       this.filtersTimeout = setTimeout(() => {
@@ -846,13 +859,13 @@ export default {
       }, 500)
     },
 
-    // Применение фильтров
+    // Применение выбранных фильтров
     applyFilters() {
       this.currentPage = 1
       this.performSearch()
     },
 
-    // Сброс всех фильтров
+    // Сброс всех фильтров к значениям по умолчанию
     resetFilters() {
       this.searchQuery = ''
       this.currentPage = 1
@@ -869,7 +882,7 @@ export default {
       this.performSearch()
     },
 
-    // Переключение панели фильтров
+    // Переключение видимости панели фильтров
     toggleFilters() {
       this.showFiltersPanel = !this.showFiltersPanel
     },
@@ -879,7 +892,7 @@ export default {
       this.viewMode = mode
     },
 
-    // Информация о результатах
+    // Формирование текста с информацией о результатах
     getResultsInfo() {
       if (this.searchLoading) return '🔍 Поиск...'
       if (this.loading) return 'Загрузка модов...'
@@ -889,7 +902,7 @@ export default {
       return `Найдено модов: ${this.totalMods}${searchText}${pageInfo}`
     },
 
-    // Пагинация
+    // Переход на предыдущую страницу
     prevPage() {
       if (this.currentPage > 1) {
         this.currentPage--
@@ -897,6 +910,7 @@ export default {
       }
     },
 
+    // Переход на следующую страницу
     nextPage() {
       if (this.currentPage < this.totalPages) {
         this.currentPage++
@@ -904,7 +918,7 @@ export default {
       }
     },
 
-    // Сортировка
+    // Сортировка по указанному полю
     sortBy(field) {
       if (this.sortByField === field) {
         this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc'
@@ -915,14 +929,14 @@ export default {
       this.performSearch()
     },
 
-    // Просмотр деталей мода
+    // Просмотр детальной информации о моде
     async viewModDetails(mod) {
       this.selectedMod = mod
       this.galleryLoading = true
       this.sourcesLoading = true
 
       try {
-        // Используем API методы вместо прямых fetch
+        // Загружаем галерею и источники параллельно
         const [gallery, sources] = await Promise.all([
           galleriesApi.getByModId(mod.id),
           sourcesApi.getByModId(mod.id)
@@ -932,7 +946,7 @@ export default {
         this.downloadSources = Array.isArray(sources) ? sources : []
 
       } catch (error) {
-        console.error('❌ Ошибка загрузки деталей:', error)
+        console.error('Ошибка загрузки деталей:', error)
         this.galleryImages = []
         this.downloadSources = []
       } finally {
@@ -941,17 +955,14 @@ export default {
       }
     },
 
-    // Скачивание файла
+    // Скачивание файла мода
     async downloadFile(source) {
       try {
-        console.log('📥 Начинаем скачивание файла:', source)
-
         // Помечаем файл как скачиваемый
         this.downloadingFiles[source.id] = true
 
-        // Получаем имя файла для отображения
+        // Получаем имя файла из пути
         const fileName = this.extractFileNameFromPath(source)
-        console.log(`📁 Имя файла для скачивания: ${fileName}`)
 
         // Скачиваем файл через API
         const blob = await filesApi.downloadModFile(fileName)
@@ -968,15 +979,13 @@ export default {
         document.body.appendChild(a)
         a.click()
 
-        // Очищаем
+        // Очищаем ресурсы
         window.URL.revokeObjectURL(url)
         document.body.removeChild(a)
 
-        console.log('✅ Файл успешно скачан:', downloadName)
-
       } catch (error) {
-        console.error('❌ Ошибка скачивания файла:', error)
-        alert('❌ Ошибка при скачивании файла: ' + error.message)
+        console.error('Ошибка скачивания файла:', error)
+        alert('Ошибка при скачивании файла: ' + error.message)
       } finally {
         // Снимаем блокировку
         this.downloadingFiles[source.id] = false
@@ -985,42 +994,30 @@ export default {
 
     // Извлечение имени файла из пути
     extractFileNameFromPath(source) {
-      console.log('🔍 Извлекаем имя файла:', {
-        fileName: source.fileName,
-        filePath: source.filePath
-      })
-
-      // 1. Пробуем из filePath (основной способ из рабочего проекта)
+      // Приоритет: filePath -> fileName -> ID
       if (source.filePath) {
-        const fileName = source.filePath.split('/').pop()
-        console.log(`✅ Извлекли из filePath: "${fileName}"`)
-        return fileName
+        return source.filePath.split('/').pop()
       }
-
-      // 2. Используем fileName если нет filePath
       if (source.fileName) {
-        console.log(`✅ Используем fileName: "${source.fileName}"`)
         return source.fileName
       }
-
-      // 3. Fallback
-      console.log(`⚠️ Не нашли имя файла, используем ID: ${source.id}`)
       return `${source.id}.jar`
     },
 
-    // Утилиты для URL
+    // Формирование полного URL для изображения
     getFullImageUrl(url) {
       if (!url) return ''
       if (url.startsWith('http')) return url
       return `${API_BASE}${url.startsWith('/') ? url : '/' + url}`
     },
 
+    // Обработка ошибки загрузки изображения
     handleImageError(event) {
       event.target.style.display = 'none'
       event.target.parentElement.innerHTML = '<div class="image-error">🖼️ Ошибка загрузки</div>'
     },
 
-    // Форматирование
+    // Укорачивание длинного описания
     truncateDescription(description) {
       if (!description) return 'Нет описания'
       return description.length > 100
@@ -1028,6 +1025,7 @@ export default {
         : description
     },
 
+    // Укорачивание длинного URL
     truncateUrl(url) {
       if (!url) return ''
       if (url.length > 50) {
@@ -1036,11 +1034,13 @@ export default {
       return url
     },
 
+    // Форматирование числа с разделителями разрядов
     formatNumber(num) {
       if (!num && num !== 0) return '0'
       return new Intl.NumberFormat('ru-RU').format(num)
     },
 
+    // Форматирование размера файла в человекочитаемый вид
     formatFileSize(bytes) {
       if (!bytes) return '0 Б'
       const units = ['Б', 'КБ', 'МБ', 'ГБ']
@@ -1053,6 +1053,7 @@ export default {
       return `${size.toFixed(1)} ${units[unitIndex]}`
     },
 
+    // Форматирование даты
     formatDate(dateString) {
       if (!dateString) return 'Нет даты'
       const date = new Date(dateString)
@@ -1063,7 +1064,7 @@ export default {
       })
     },
 
-    // Редактирование мода
+    // Открытие формы редактирования мода
     editMod(mod) {
       this.selectedModForEdit = mod
       this.showModForm = true
@@ -1077,7 +1078,7 @@ export default {
 
     // Обработка сохранения мода
     handleModSaved() {
-      this.performSearch() // Перезагружаем с текущими фильтрами
+      this.performSearch() // Обновляем список с текущими фильтрами
       this.closeModForm()
       if (this.selectedMod) {
         this.closeModal()
@@ -1097,48 +1098,44 @@ export default {
       }
     },
 
-    // Метод для удаления файлов галереи мода
+    // Удаление всех файлов галереи мода
     async deleteModGalleryFiles(modId) {
       try {
-        console.log(`🖼️ Удаление галереи мода ${modId}`)
-
-        // Используем API метод вместо прямого fetch
+        // Получаем список изображений галереи
         const galleryImages = await galleriesApi.getByModId(modId)
-        console.log(`📸 Найдено изображений галереи: ${galleryImages.length}`)
 
         // Удаляем каждое изображение
         for (const image of galleryImages) {
           try {
             await this.deleteGalleryImage(image)
-            console.log(`✅ Удалено изображение галереи: ${image.fileName}`)
           } catch (error) {
-            console.warn(`⚠️ Не удалось удалить изображение ${image.id}:`, error.message)
+            console.warn(`Не удалось удалить изображение ${image.id}:`, error.message)
           }
         }
 
       } catch (error) {
-        console.error('❌ Ошибка при удалении галереи:', error)
-        // Не прерываем удаление мода из-за ошибки с галереей
+        console.error('Ошибка при удалении галереи:', error)
+        // Продолжаем удаление мода даже при ошибке с галереей
       }
     },
 
-    // Метод для удаления одного изображения галереи
+    // Удаление одного изображения галереи
     async deleteGalleryImage(image) {
-      // 1. Удаляем файл с сервера (если есть)
+      // Удаляем файл с сервера
       if (image.imageUrl) {
         const fileName = image.imageUrl.split('/').pop()
         try {
           await filesApi.deleteGalleryImage(fileName)
         } catch (error) {
-          console.warn(`⚠️ Ошибка удаления файла ${fileName}:`, error.message)
+          console.warn(`Ошибка удаления файла ${fileName}:`, error.message)
         }
       }
 
-      // 2. Удаляем запись из БД через API
+      // Удаляем запись из базы данных
       await galleriesApi.delete(image.id)
     },
 
-    // Модальное окно деталей
+    // Закрытие модального окна с деталями
     closeModal() {
       this.selectedMod = null
       this.galleryImages = []
@@ -1146,16 +1143,17 @@ export default {
       this.lightboxImage = null
     },
 
-    // Lightbox
+    // Открытие увеличенного просмотра изображения
     openLightbox(image) {
       this.lightboxImage = image
     },
 
+    // Закрытие увеличенного просмотра
     closeLightbox() {
       this.lightboxImage = null
     },
 
-    // Авторизация
+    // Обработка клика по кнопке авторизации
     handleAuthClick() {
       if (this.isAuthenticated) {
         this.logout()
@@ -1164,7 +1162,7 @@ export default {
       }
     },
 
-    // Успешный вход
+    // Обработка успешного входа
     handleLoginSuccess(token) {
       this.isAuthenticated = true
       this.showAuthModal = false
@@ -1173,11 +1171,11 @@ export default {
       const username = localStorage.getItem('username') || 'Пользователь'
       this.username = username
 
-      // Перезагружаем данные
+      // Загружаем данные
       this.loadFilterData()
     },
 
-    // Выход
+    // Выход из системы
     logout() {
       if (confirm('Выйти из системы?')) {
         clearAuthToken()
@@ -1189,10 +1187,9 @@ export default {
       }
     },
 
-    // Обработка добавления элемента из QuickAddPanel
+    // Обработка добавления элемента из панели быстрого добавления
     handleItemAdded({ type, data }) {
-      console.log(`Элемент ${type} добавлен:`, data)
-      // После добавления элемента, обновляем соответствующий фильтр
+      // Добавляем новый элемент в соответствующий список фильтров
       switch (type) {
         case 'version':
           this.availableVersions.push(data)
@@ -1209,12 +1206,10 @@ export default {
       }
     },
 
-    // Обработка обновления сущностей
+    // Обработка обновления справочных сущностей
     handleEntitiesUpdated({ type, data, action, id }) {
-      console.log(`Сущность ${type} обновлена:`, data)
-
       if (action === 'delete') {
-        // Удаляем из списков фильтров с проверкой
+        // Удаляем элемент из списка фильтров
         switch (type) {
           case 'version':
             if (this.availableVersions) {
@@ -1238,7 +1233,7 @@ export default {
             break
         }
       } else {
-        // Если не удаление, обновляем данные
+        // Обновляем данные фильтров
         this.refreshFilterData()
       }
     },
@@ -1264,6 +1259,7 @@ export default {
     }
   },
 
+  // Очистка таймеров при уничтожении компонента
   beforeUnmount() {
     if (this.searchTimeout) clearTimeout(this.searchTimeout)
     if (this.filtersTimeout) clearTimeout(this.filtersTimeout)
@@ -1796,6 +1792,69 @@ body {
 
 #app {
   min-height: 100vh;
+  transform-origin: center center;
+}
+
+
+
+.animated-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(
+    circle at 50% 50%,
+    #1a472a,      /* Темно-зеленый */
+    #2a6230,      /* Зеленый */
+    #3b7a3b,      /* Средне-зеленый */
+    #4c8b4c,      /* Светло-зеленый */
+    #5da55d,      /* Мятно-зеленый */
+    #6eb96e,      /* Ярко-зеленый */
+    #7fcd7f,      /* Салатовый */
+    #90e090,      /* Очень светлый зеленый */
+    #a0f0a0,      /* Почти белый зеленый */
+    #90e0f0,      /* Голубой */
+    #7fc0e0,      /* Небесный */
+    #6fa0d0,      /* Синий */
+    #5f80c0,      /* Темно-синий */
+    #4f60b0,      /* Индиго */
+    #6f4fa0,      /* Фиолетовый */
+    #8f3f90,      /* Пурпурный */
+    #af2f80,      /* Розово-фиолетовый */
+    #cf1f70,      /* Розовый */
+    #ef0f60,      /* Ярко-розовый */
+    #ff0066,      /* Неоново-розовый */
+    #1a472a       /* Возврат */
+  );
+  background-size: 600% 600%;
+  animation: auroraFlow 30s ease infinite;
+  filter: brightness(0.8);
+  opacity: 0.9;
+}
+
+@keyframes auroraFlow {
+  0% {
+    background-position: 0% 0%;
+    
+  }
+  25% {
+    background-position: 100% 0%;
+    
+  }
+  50% {
+    background-position: 100% 100%;
+    
+  }
+  75% {
+    background-position: 0% 100%;
+    
+  }
+  100% {
+    background-position: 0% 0%;
+  
+  }
 }
 
 /* Хедер */
@@ -2261,11 +2320,10 @@ body {
   color: #555;
 }
 
-/* Исправлено горизонтальное отображение статистики */
+/* Горизонтальное отображение статистики */
 .modal-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* Две колонки */
   gap: 15px;
   margin: 25px 0;
 }
@@ -2571,7 +2629,6 @@ body {
 @media (max-width: 768px) {
   .modal-grid {
     grid-template-columns: 1fr;
-    /* Одна колонка на мобильных */
   }
 
   .mod-main-info {

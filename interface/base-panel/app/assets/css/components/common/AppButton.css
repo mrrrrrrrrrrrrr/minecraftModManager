@@ -1,0 +1,329 @@
+/* ===== КНОПКИ ===== */
+
+.btn {
+    font-family: "Minecraft";
+    position: relative;
+    font-size: 1rem;
+    padding: 1% 2%;
+    border: 4px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 15%;
+    box-shadow: 0 6px 0 black;
+    z-index: 100;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    image-rendering: pixelated;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+    pointer-events: none;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    border-color: white;
+    z-index: 101;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 black;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    transform: none;
+    box-shadow: 0 6px 0 black;
+}
+
+/* Варианты кнопок */
+.btn-primary {
+    background:
+            linear-gradient(0, rgba(0, 255, 255, 1), rgba(0, 0, 0, 0)),
+            url('/images/ice.png') center/10vh;
+    color: black;
+}
+
+.btn-primary:hover {
+    background:
+            linear-gradient(0, rgba(0, 255, 255, 1), rgba(0, 0, 0, 0.3)),
+            url('/images/ice.png') center/10vh;
+    color: white;
+}
+
+.btn-success {
+    background:
+            linear-gradient(0, rgba(0, 255, 0, 1), rgba(0, 0, 0, 0)),
+            url('/images/moss_block.png') center/10vh;
+    color: black;
+}
+
+.btn-success:hover {
+    background:
+            linear-gradient(0, rgba(0, 255, 0, 1), rgba(0, 0, 0, 0.3)),
+            url('/images/moss_block.png') center/10vh;
+    color: white;
+}
+
+.btn-danger {
+    background:
+            linear-gradient(0, rgba(255, 0, 0, 1), rgba(0, 0, 0, 0)),
+            url('/images/redstone_block.png') center/10vh;
+    color: white;
+}
+
+.btn-danger:hover {
+    background:
+            linear-gradient(0, rgba(255, 0, 0, 1), rgba(0, 0, 0, 0.3)),
+            url('/images/redstone_block.png') center/10vh;
+}
+
+.btn-warning {
+    background:
+            linear-gradient(0, rgba(255, 128, 0, 1), rgba(0, 0, 0, 0)),
+            url('/images/red_sand.png') center/10vh;
+    color: black;
+}
+
+.btn-warning:hover {
+    background:
+            linear-gradient(0, rgba(255, 128, 0, 1), rgba(0, 0, 0, 0.3)),
+            url('/images/red_sand.png') center/10vh;
+    color: white;
+}
+
+.btn-secondary {
+    background:
+            linear-gradient(0, rgba(128, 128, 128, 1), rgba(0, 0, 0, 0)),
+            url('/images/dead_brain_coral_block.png') center/10vh;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background:
+            linear-gradient(0, rgba(128, 128, 128, 1), rgba(0, 0, 0, 0.3)),
+            url('/images/dead_brain_coral_block.png') center/10vh;
+}
+
+/* Размеры кнопок */
+.btn-sm {
+    padding: 0.5% 1%;
+    font-size: 0.875rem;
+    min-width: 10%;
+    background:
+            linear-gradient(0, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)),
+            url('/images/snow.png') center/40%;
+    color: black;
+}
+
+.btn-sm:hover {
+    background:
+            linear-gradient(0, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.3)),
+            url('/images/snow.png') center/40%;
+    color: black;
+}
+
+.btn-large {
+    padding: 2% 4%;
+    font-size: 1.25rem;
+    min-width: 20%;
+}
+
+/* Кнопки с иконками */
+.btn-icon {
+    padding: 1%;
+    min-width: auto;
+    aspect-ratio: 1;
+}
+
+.btn-icon span {
+    font-size: 1.2rem;
+}
+
+/* Блоки кнопок */
+.button-group {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.button-group .btn {
+    flex: 1;
+    min-width: fit-content;
+}
+
+/* Специальные кнопки */
+.btn-logout {
+    margin-left: auto;
+}
+
+.btn-remove {
+    padding: 0.75%;
+}
+
+.btn-download {
+    background:
+            linear-gradient(0, rgba(128, 255, 128, 1), rgba(0, 0, 0, 0)),
+            url('/images/moss_block.png') center/10vh;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-download:hover {
+    background:
+            linear-gradient(0, rgba(128, 255, 128, 1), rgba(0, 0, 0, 0.3)),
+            url('/images/moss_block.png') center/10vh;
+}
+
+/* Кнопки выбора */
+.btn-select-all,
+.btn-deselect-all {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-family: "Minecraft";
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    background: url('/images/red_wool.png') bottom/10vh;
+    color: white;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.btn-select-all:hover {
+    background: url('/images/red_wool.png') top/10vh;
+    border-color: var(--primary-color);
+}
+
+.btn-deselect-all:hover {
+    background: url('/images/red_wool.png') top/10vh;
+    border-color: var(--danger-color);
+}
+
+.btn-select-all::before {
+    content: "✓";
+    font-weight: bold;
+}
+
+.btn-deselect-all::before {
+    content: "×";
+    font-weight: bold;
+}
+
+/* Тип URL/File переключатели */
+.btn-type-url,
+.btn-type-file {
+    padding: var(--spacing-sm);
+    border: 4px solid black;
+    box-shadow: 0 6px 0 black;
+    background: url('/images/red_wool.png') center/10vh;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-type-url.active,
+.btn-type-file.active {
+    background: url('/images/moss_block.png') center/10vh;
+    color: black;
+    transform: scale(1.05);
+    border-color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .btn {
+        padding: 2% 4%;
+        font-size: 0.9rem;
+        min-width: 20%;
+    }
+
+    .btn-sm {
+        padding: 1% 2%;
+        font-size: 0.8rem;
+    }
+
+    .btn-large {
+        padding: 3% 6%;
+        font-size: 1.1rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group .btn {
+        width: 100%;
+    }
+
+    .btn-logout {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 3% 6%;
+        font-size: 0.85rem;
+    }
+
+    .btn-icon {
+        padding: 2%;
+    }
+}
+
+/* Анимации для кнопок */
+@keyframes buttonPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.btn-pulse {
+    animation: buttonPulse 2s infinite;
+}
+
+/* Состояние загрузки */
+.btn-loading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+}
+
+.btn-loading::after {
+    content: "📦";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1s linear infinite;
+    color: white;
+    font-size: 1.2rem;
+}

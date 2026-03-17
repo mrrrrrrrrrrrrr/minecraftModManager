@@ -1,0 +1,145 @@
+/* ===== СТИЛИ ГЛАВНОЙ СТРАНИЦЫ ===== */
+
+/* Добавляем высоту для main-content */
+.main-content {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 80px); /* Высота экрана минус высота хедера */
+}
+
+/* Остальные стили без изменений */
+.tabs-content {
+    position: relative;
+    z-index: 2;
+    min-width: 0;
+    grid-column: 1;
+    width: 100%;
+}
+
+.sidebar {
+    position: relative;
+    z-index: 2;
+    grid-column: 2;
+    width: 100%;
+}
+
+.table-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.mods-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.table-container {
+    width: 100%;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.grid-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.page-info {
+    color: var(--text-primary);
+    font-family: "Minecraft";
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url('/images/obsidian.png') center/10vh;
+    outline: 6px solid black;
+    image-rendering: pixelated;
+    white-space: nowrap;
+}
+
+.mods-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 1rem;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+                url('/images/obsidian.png') center/10vh;
+    outline: 6px solid black;
+    image-rendering: pixelated;
+    width: 100%;
+}
+
+.loading-spinner {
+    font-size: 3rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        min-height: calc(100vh - 70px); /* Немного меньше на планшетах */
+    }
+    
+    .tabs-content,
+    .sidebar {
+        grid-column: 1;
+    }
+    
+    .sidebar {
+        margin-top: 20px;
+    }
+    
+    .mods-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        min-height: calc(100vh - 120px); /* На мобилках хедер выше */
+    }
+    
+    .table-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .grid-pagination {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .mods-grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-info {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .loading-spinner {
+        font-size: 2rem;
+    }
+}

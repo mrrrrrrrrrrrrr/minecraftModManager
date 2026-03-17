@@ -1,1 +1,3421 @@
-{"Version":1,"Hash":"YxdTAHCMOH0/NTWZMfL98pYoh2dthhtTrFMPPAsDf8w=","Source":"LibraryAPI_2025","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[{"Name":"LibraryAPI_2025\\wwwroot","Source":"LibraryAPI_2025","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","Pattern":"**"}],"Assets":[{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/1_019c1925-48bc-780c-b069-2f5d8e206d40#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"hcl0bled11","Integrity":"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg","FileLength":17933,"LastWriteTime":"2026-02-01T12:19:59+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c193f-9548-760b-afb9-54d3f4ab9096.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/1_019c193f-9548-760b-afb9-54d3f4ab9096#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"k372kpvczu","Integrity":"kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\1_019c193f-9548-760b-afb9-54d3f4ab9096.webp","FileLength":1644628,"LastWriteTime":"2026-02-01T12:48:43+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c194c-2057-7d3f-b3a2-591137a62753.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/1_019c194c-2057-7d3f-b3a2-591137a62753#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"w0ow0h5xea","Integrity":"YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\1_019c194c-2057-7d3f-b3a2-591137a62753.webp","FileLength":47984,"LastWriteTime":"2026-02-01T13:02:25+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/1_019c1e1b-92ba-708c-8ab9-2696a4da8037#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"k3z63ka3tm","Integrity":"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp","FileLength":5776,"LastWriteTime":"2026-02-02T11:27:29+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/1_019c1e79-6690-7c58-848d-87a3f4825a59#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"2bktwvianj","Integrity":"8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg","FileLength":46658,"LastWriteTime":"2026-02-02T13:09:58+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"zsv2dtiz2f","Integrity":"g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg","FileLength":114304,"LastWriteTime":"2026-02-02T13:12:45+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/1_019c1f5e-6a5a-7a81-b455-ecdff2cace99#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"5hmd9q845x","Integrity":"93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg","FileLength":115099,"LastWriteTime":"2026-02-02T17:20:07+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1925-48bc-780c-b069-2f5d8e206d40.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/2_019c1925-48bc-780c-b069-2f5d8e206d40#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"v6nl2ujq32","Integrity":"p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\2_019c1925-48bc-780c-b069-2f5d8e206d40.webp","FileLength":239906,"LastWriteTime":"2026-02-01T12:19:59+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c194c-2057-7d3f-b3a2-591137a62753.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/2_019c194c-2057-7d3f-b3a2-591137a62753#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"2hh2x4br7h","Integrity":"Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\2_019c194c-2057-7d3f-b3a2-591137a62753.jpg","FileLength":136191,"LastWriteTime":"2026-02-01T13:02:25+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/2_019c1e1b-92ba-708c-8ab9-2696a4da8037#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"w80dlvw2p5","Integrity":"gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg","FileLength":93020,"LastWriteTime":"2026-02-02T11:27:29+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/2_019c1e79-6690-7c58-848d-87a3f4825a59#[.{fingerprint}]?.jpeg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"are0chxp46","Integrity":"tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg","FileLength":810253,"LastWriteTime":"2026-02-02T13:09:58+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"modsGallery/2_019c1f5e-6a5a-7a81-b455-ecdff2cace99#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"rfd9o2yrbb","Integrity":"R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\modsGallery\\2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp","FileLength":48368,"LastWriteTime":"2026-02-02T17:20:07+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1-1_15_1_neoforge_019c1f5e.zip","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"mods/1_16_1-1_15_1_neoforge_019c1f5e#[.{fingerprint}]?.zip","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"azdos9yuv8","Integrity":"OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\mods\\1_16_1-1_15_1_neoforge_019c1f5e.zip","FileLength":29910989,"LastWriteTime":"2026-02-02T17:20:07+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1_forge_019c1e7b.rar","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"mods/1_16_1_forge_019c1e7b#[.{fingerprint}]?.rar","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"mng4n5rhjf","Integrity":"rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\mods\\1_16_1_forge_019c1e7b.rar","FileLength":1984543,"LastWriteTime":"2026-02-02T13:58:23+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_1-1_17_1_forge_019c1f5e.zip","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"mods/1_18_1-1_17_1_forge_019c1f5e#[.{fingerprint}]?.zip","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"valbcfms6d","Integrity":"aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\mods\\1_18_1-1_17_1_forge_019c1f5e.zip","FileLength":149965,"LastWriteTime":"2026-02-02T17:20:07+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\04516dad-53f9-4481-b643-9bd854f09867.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"uploads/04516dad-53f9-4481-b643-9bd854f09867#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"y7rflja6eg","Integrity":"ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\uploads\\04516dad-53f9-4481-b643-9bd854f09867.jpg","FileLength":85885,"LastWriteTime":"2026-02-02T13:09:58+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\296419fa-d118-4a02-88c4-846bc4da709c.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"uploads/296419fa-d118-4a02-88c4-846bc4da709c#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"9ggei1k5cp","Integrity":"ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\uploads\\296419fa-d118-4a02-88c4-846bc4da709c.webp","FileLength":32428,"LastWriteTime":"2026-02-01T12:48:43+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"uploads/4f72caa2-ca9d-4dae-8618-b7c73417310b#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"hcl0bled11","Integrity":"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\uploads\\4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg","FileLength":17933,"LastWriteTime":"2026-02-02T17:20:07+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\9e2def7e-f035-41f3-ae71-1a265ef2b289.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"uploads/9e2def7e-f035-41f3-ae71-1a265ef2b289#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"ex9l951xoo","Integrity":"glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\uploads\\9e2def7e-f035-41f3-ae71-1a265ef2b289.webp","FileLength":38762,"LastWriteTime":"2026-02-02T13:12:45+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\af53bd1c-372b-410c-aed4-2851c3cd1b00.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"uploads/af53bd1c-372b-410c-aed4-2851c3cd1b00#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"k3z63ka3tm","Integrity":"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\uploads\\af53bd1c-372b-410c-aed4-2851c3cd1b00.webp","FileLength":5776,"LastWriteTime":"2026-02-01T13:02:25+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"uploads/b27efbe0-77b5-4a81-8849-0b4552d705a9#[.{fingerprint}]?.jpg","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"ben3n0cg53","Integrity":"M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\uploads\\b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg","FileLength":87195,"LastWriteTime":"2026-02-01T12:19:59+00:00"},{"Identity":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp","SourceId":"LibraryAPI_2025","SourceType":"Discovered","ContentRoot":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\","BasePath":"/","RelativePath":"uploads/bdc61b2e-bc0d-47f8-8189-409bbe6561bb#[.{fingerprint}]?.webp","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"3ywpvnj9x4","Integrity":"9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\uploads\\bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp","FileLength":43448,"LastWriteTime":"2026-02-02T11:27:29+00:00"}],"Endpoints":[{"Route":"mods/1_16_1-1_15_1_neoforge_019c1f5e.azdos9yuv8.zip","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1-1_15_1_neoforge_019c1f5e.zip","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"29910989"},{"Name":"Content-Type","Value":"application/x-zip-compressed"},{"Name":"ETag","Value":"\"OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"azdos9yuv8"},{"Name":"integrity","Value":"sha256-OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI="},{"Name":"label","Value":"mods/1_16_1-1_15_1_neoforge_019c1f5e.zip"}]},{"Route":"mods/1_16_1-1_15_1_neoforge_019c1f5e.zip","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1-1_15_1_neoforge_019c1f5e.zip","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"29910989"},{"Name":"Content-Type","Value":"application/x-zip-compressed"},{"Name":"ETag","Value":"\"OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI="}]},{"Route":"mods/1_16_1_forge_019c1e7b.mng4n5rhjf.rar","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1_forge_019c1e7b.rar","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1984543"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\"rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:58:23 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"mng4n5rhjf"},{"Name":"integrity","Value":"sha256-rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4="},{"Name":"label","Value":"mods/1_16_1_forge_019c1e7b.rar"}]},{"Route":"mods/1_16_1_forge_019c1e7b.rar","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1_forge_019c1e7b.rar","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1984543"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\"rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:58:23 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4="}]},{"Route":"mods/1_18_1-1_17_1_forge_019c1f5e.valbcfms6d.zip","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_1-1_17_1_forge_019c1f5e.zip","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"149965"},{"Name":"Content-Type","Value":"application/x-zip-compressed"},{"Name":"ETag","Value":"\"aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"valbcfms6d"},{"Name":"integrity","Value":"sha256-aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8="},{"Name":"label","Value":"mods/1_18_1-1_17_1_forge_019c1f5e.zip"}]},{"Route":"mods/1_18_1-1_17_1_forge_019c1f5e.zip","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_1-1_17_1_forge_019c1f5e.zip","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"149965"},{"Name":"Content-Type","Value":"application/x-zip-compressed"},{"Name":"ETag","Value":"\"aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8="}]},{"Route":"modsGallery/1_019c1925-48bc-780c-b069-2f5d8e206d40.hcl0bled11.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17933"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:19:59 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"hcl0bled11"},{"Name":"integrity","Value":"sha256-EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU="},{"Name":"label","Value":"modsGallery/1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg"}]},{"Route":"modsGallery/1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"17933"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:19:59 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU="}]},{"Route":"modsGallery/1_019c193f-9548-760b-afb9-54d3f4ab9096.k372kpvczu.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c193f-9548-760b-afb9-54d3f4ab9096.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1644628"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:48:43 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"k372kpvczu"},{"Name":"integrity","Value":"sha256-kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs="},{"Name":"label","Value":"modsGallery/1_019c193f-9548-760b-afb9-54d3f4ab9096.webp"}]},{"Route":"modsGallery/1_019c193f-9548-760b-afb9-54d3f4ab9096.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c193f-9548-760b-afb9-54d3f4ab9096.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1644628"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:48:43 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs="}]},{"Route":"modsGallery/1_019c194c-2057-7d3f-b3a2-591137a62753.w0ow0h5xea.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c194c-2057-7d3f-b3a2-591137a62753.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"47984"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 13:02:25 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"w0ow0h5xea"},{"Name":"integrity","Value":"sha256-YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU="},{"Name":"label","Value":"modsGallery/1_019c194c-2057-7d3f-b3a2-591137a62753.webp"}]},{"Route":"modsGallery/1_019c194c-2057-7d3f-b3a2-591137a62753.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c194c-2057-7d3f-b3a2-591137a62753.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"47984"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 13:02:25 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU="}]},{"Route":"modsGallery/1_019c1e1b-92ba-708c-8ab9-2696a4da8037.k3z63ka3tm.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5776"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 11:27:29 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"k3z63ka3tm"},{"Name":"integrity","Value":"sha256-MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc="},{"Name":"label","Value":"modsGallery/1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp"}]},{"Route":"modsGallery/1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5776"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 11:27:29 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc="}]},{"Route":"modsGallery/1_019c1e79-6690-7c58-848d-87a3f4825a59.2bktwvianj.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"46658"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:09:58 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"2bktwvianj"},{"Name":"integrity","Value":"sha256-8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8="},{"Name":"label","Value":"modsGallery/1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg"}]},{"Route":"modsGallery/1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"46658"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:09:58 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8="}]},{"Route":"modsGallery/1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"114304"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:12:45 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM="}]},{"Route":"modsGallery/1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.zsv2dtiz2f.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"114304"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:12:45 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"zsv2dtiz2f"},{"Name":"integrity","Value":"sha256-g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM="},{"Name":"label","Value":"modsGallery/1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg"}]},{"Route":"modsGallery/1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.5hmd9q845x.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"115099"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"5hmd9q845x"},{"Name":"integrity","Value":"sha256-93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs="},{"Name":"label","Value":"modsGallery/1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg"}]},{"Route":"modsGallery/1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"115099"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs="}]},{"Route":"modsGallery/2_019c1925-48bc-780c-b069-2f5d8e206d40.v6nl2ujq32.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1925-48bc-780c-b069-2f5d8e206d40.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"239906"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:19:59 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"v6nl2ujq32"},{"Name":"integrity","Value":"sha256-p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4="},{"Name":"label","Value":"modsGallery/2_019c1925-48bc-780c-b069-2f5d8e206d40.webp"}]},{"Route":"modsGallery/2_019c1925-48bc-780c-b069-2f5d8e206d40.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1925-48bc-780c-b069-2f5d8e206d40.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"239906"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:19:59 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4="}]},{"Route":"modsGallery/2_019c194c-2057-7d3f-b3a2-591137a62753.2hh2x4br7h.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c194c-2057-7d3f-b3a2-591137a62753.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"136191"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 13:02:25 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"2hh2x4br7h"},{"Name":"integrity","Value":"sha256-Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk="},{"Name":"label","Value":"modsGallery/2_019c194c-2057-7d3f-b3a2-591137a62753.jpg"}]},{"Route":"modsGallery/2_019c194c-2057-7d3f-b3a2-591137a62753.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c194c-2057-7d3f-b3a2-591137a62753.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"136191"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 13:02:25 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk="}]},{"Route":"modsGallery/2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"93020"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 11:27:29 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE="}]},{"Route":"modsGallery/2_019c1e1b-92ba-708c-8ab9-2696a4da8037.w80dlvw2p5.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"93020"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 11:27:29 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"w80dlvw2p5"},{"Name":"integrity","Value":"sha256-gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE="},{"Name":"label","Value":"modsGallery/2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg"}]},{"Route":"modsGallery/2_019c1e79-6690-7c58-848d-87a3f4825a59.are0chxp46.jpeg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"810253"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:09:58 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"are0chxp46"},{"Name":"integrity","Value":"sha256-tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY="},{"Name":"label","Value":"modsGallery/2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg"}]},{"Route":"modsGallery/2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"810253"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:09:58 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY="}]},{"Route":"modsGallery/2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.rfd9o2yrbb.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"48368"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"rfd9o2yrbb"},{"Name":"integrity","Value":"sha256-R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s="},{"Name":"label","Value":"modsGallery/2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp"}]},{"Route":"modsGallery/2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"48368"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s="}]},{"Route":"uploads/04516dad-53f9-4481-b643-9bd854f09867.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\04516dad-53f9-4481-b643-9bd854f09867.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"85885"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:09:58 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM="}]},{"Route":"uploads/04516dad-53f9-4481-b643-9bd854f09867.y7rflja6eg.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\04516dad-53f9-4481-b643-9bd854f09867.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"85885"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:09:58 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"y7rflja6eg"},{"Name":"integrity","Value":"sha256-ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM="},{"Name":"label","Value":"uploads/04516dad-53f9-4481-b643-9bd854f09867.jpg"}]},{"Route":"uploads/296419fa-d118-4a02-88c4-846bc4da709c.9ggei1k5cp.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\296419fa-d118-4a02-88c4-846bc4da709c.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32428"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:48:43 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"9ggei1k5cp"},{"Name":"integrity","Value":"sha256-ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A="},{"Name":"label","Value":"uploads/296419fa-d118-4a02-88c4-846bc4da709c.webp"}]},{"Route":"uploads/296419fa-d118-4a02-88c4-846bc4da709c.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\296419fa-d118-4a02-88c4-846bc4da709c.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"32428"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:48:43 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A="}]},{"Route":"uploads/4f72caa2-ca9d-4dae-8618-b7c73417310b.hcl0bled11.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"17933"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"hcl0bled11"},{"Name":"integrity","Value":"sha256-EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU="},{"Name":"label","Value":"uploads/4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg"}]},{"Route":"uploads/4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"17933"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 17:20:07 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU="}]},{"Route":"uploads/9e2def7e-f035-41f3-ae71-1a265ef2b289.ex9l951xoo.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\9e2def7e-f035-41f3-ae71-1a265ef2b289.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"38762"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:12:45 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"ex9l951xoo"},{"Name":"integrity","Value":"sha256-glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg="},{"Name":"label","Value":"uploads/9e2def7e-f035-41f3-ae71-1a265ef2b289.webp"}]},{"Route":"uploads/9e2def7e-f035-41f3-ae71-1a265ef2b289.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\9e2def7e-f035-41f3-ae71-1a265ef2b289.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"38762"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 13:12:45 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg="}]},{"Route":"uploads/af53bd1c-372b-410c-aed4-2851c3cd1b00.k3z63ka3tm.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\af53bd1c-372b-410c-aed4-2851c3cd1b00.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5776"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 13:02:25 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"k3z63ka3tm"},{"Name":"integrity","Value":"sha256-MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc="},{"Name":"label","Value":"uploads/af53bd1c-372b-410c-aed4-2851c3cd1b00.webp"}]},{"Route":"uploads/af53bd1c-372b-410c-aed4-2851c3cd1b00.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\af53bd1c-372b-410c-aed4-2851c3cd1b00.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5776"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 13:02:25 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc="}]},{"Route":"uploads/b27efbe0-77b5-4a81-8849-0b4552d705a9.ben3n0cg53.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"87195"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:19:59 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"ben3n0cg53"},{"Name":"integrity","Value":"sha256-M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM="},{"Name":"label","Value":"uploads/b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg"}]},{"Route":"uploads/b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"87195"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\"M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM=\""},{"Name":"Last-Modified","Value":"Sun, 01 Feb 2026 12:19:59 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM="}]},{"Route":"uploads/bdc61b2e-bc0d-47f8-8189-409bbe6561bb.3ywpvnj9x4.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"43448"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 11:27:29 GMT"}],"EndpointProperties":[{"Name":"fingerprint","Value":"3ywpvnj9x4"},{"Name":"integrity","Value":"sha256-9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg="},{"Name":"label","Value":"uploads/bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp"}]},{"Route":"uploads/bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp","AssetFile":"C:\\Users\\kapi\\Desktop\\diplom\\проект\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp","Selectors":[],"ResponseHeaders":[{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"43448"},{"Name":"Content-Type","Value":"image/webp"},{"Name":"ETag","Value":"\"9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg=\""},{"Name":"Last-Modified","Value":"Mon, 02 Feb 2026 11:27:29 GMT"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg="}]}]}
+{
+  "Version": 1,
+  "Hash": "oFErRED75VUdqZ4WSl/piFeLVqLnb/GL2MBvFiqz9mM=",
+  "Source": "LibraryAPI_2025",
+  "BasePath": "_content/LibraryAPI_2025",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LibraryAPI_2025\\wwwroot",
+      "Source": "LibraryAPI_2025",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1_forge_019c1e7b.rar",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "mods/1_16_1_forge_019c1e7b#[.{fingerprint}]?.rar",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mng4n5rhjf",
+      "Integrity": "rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mods\\1_16_1_forge_019c1e7b.rar"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1-1_15_1_neoforge_019c1f5e.zip",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "mods/1_16_1-1_15_1_neoforge_019c1f5e#[.{fingerprint}]?.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "azdos9yuv8",
+      "Integrity": "OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mods\\1_16_1-1_15_1_neoforge_019c1f5e.zip"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_1-1_17_1_forge_019c1f5e.zip",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "mods/1_18_1-1_17_1_forge_019c1f5e#[.{fingerprint}]?.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "valbcfms6d",
+      "Integrity": "aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mods\\1_18_1-1_17_1_forge_019c1f5e.zip"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_2_fabric_019cd67e.zip",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "mods/1_18_2_fabric_019cd67e#[.{fingerprint}]?.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ih8s66tipq",
+      "Integrity": "Cvhr0e7QqZ+TXODhajr/dKechtdXpUhKf4WwQ23AKO4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mods\\1_18_2_fabric_019cd67e.zip"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_2_forge-fabric_019cd6bf.zip",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "mods/1_18_2_forge-fabric_019cd6bf#[.{fingerprint}]?.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s7e08r65a1",
+      "Integrity": "+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mods\\1_18_2_forge-fabric_019cd6bf.zip"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_19_0_neoforge_019cd1f6.zip",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "mods/1_19_0_neoforge_019cd1f6#[.{fingerprint}]?.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s7e08r65a1",
+      "Integrity": "+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mods\\1_19_0_neoforge_019cd1f6.zip"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_20_1_fabric_019c6adf.zip",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "mods/1_20_1_fabric_019c6adf#[.{fingerprint}]?.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s7e08r65a1",
+      "Integrity": "+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mods\\1_20_1_fabric_019c6adf.zip"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019c1925-48bc-780c-b069-2f5d8e206d40#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hcl0bled11",
+      "Integrity": "EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c193f-9548-760b-afb9-54d3f4ab9096.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019c193f-9548-760b-afb9-54d3f4ab9096#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k372kpvczu",
+      "Integrity": "kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019c193f-9548-760b-afb9-54d3f4ab9096.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c194c-2057-7d3f-b3a2-591137a62753.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019c194c-2057-7d3f-b3a2-591137a62753#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w0ow0h5xea",
+      "Integrity": "YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019c194c-2057-7d3f-b3a2-591137a62753.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019c1e1b-92ba-708c-8ab9-2696a4da8037#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k3z63ka3tm",
+      "Integrity": "MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019c1e79-6690-7c58-848d-87a3f4825a59#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2bktwvianj",
+      "Integrity": "8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zsv2dtiz2f",
+      "Integrity": "g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019c1f5e-6a5a-7a81-b455-ecdff2cace99#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5hmd9q845x",
+      "Integrity": "93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c6adf-a1cb-71f8-b939-57f875251474.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019c6adf-a1cb-71f8-b939-57f875251474#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2afdjztz5f",
+      "Integrity": "ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019c6adf-a1cb-71f8-b939-57f875251474.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019cd1f6-f6ed-70d5-a9ac-d2f6ea985312.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/1_019cd1f6-f6ed-70d5-a9ac-d2f6ea985312#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3n149qrwyk",
+      "Integrity": "T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\1_019cd1f6-f6ed-70d5-a9ac-d2f6ea985312.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1925-48bc-780c-b069-2f5d8e206d40.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/2_019c1925-48bc-780c-b069-2f5d8e206d40#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v6nl2ujq32",
+      "Integrity": "p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\2_019c1925-48bc-780c-b069-2f5d8e206d40.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c194c-2057-7d3f-b3a2-591137a62753.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/2_019c194c-2057-7d3f-b3a2-591137a62753#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2hh2x4br7h",
+      "Integrity": "Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\2_019c194c-2057-7d3f-b3a2-591137a62753.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/2_019c1e1b-92ba-708c-8ab9-2696a4da8037#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w80dlvw2p5",
+      "Integrity": "gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/2_019c1e79-6690-7c58-848d-87a3f4825a59#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "are0chxp46",
+      "Integrity": "tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/2_019c1f5e-6a5a-7a81-b455-ecdff2cace99#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rfd9o2yrbb",
+      "Integrity": "R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c6adf-a1cb-71f8-b939-57f875251474.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "modsGallery/2_019c6adf-a1cb-71f8-b939-57f875251474#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "im2asyg67e",
+      "Integrity": "NvA7LFangK7Ylj86XH39kt8iWr4PQLf0VaRxGlHwk6w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\modsGallery\\2_019c6adf-a1cb-71f8-b939-57f875251474.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\04516dad-53f9-4481-b643-9bd854f09867.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/04516dad-53f9-4481-b643-9bd854f09867#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y7rflja6eg",
+      "Integrity": "ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\04516dad-53f9-4481-b643-9bd854f09867.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\296419fa-d118-4a02-88c4-846bc4da709c.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/296419fa-d118-4a02-88c4-846bc4da709c#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9ggei1k5cp",
+      "Integrity": "ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\296419fa-d118-4a02-88c4-846bc4da709c.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/4f72caa2-ca9d-4dae-8618-b7c73417310b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hcl0bled11",
+      "Integrity": "EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\55d6e64a-2bc5-4af7-a0fb-9966ca2531d8.gif",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/55d6e64a-2bc5-4af7-a0fb-9966ca2531d8#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "is8cfpzeio",
+      "Integrity": "fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\55d6e64a-2bc5-4af7-a0fb-9966ca2531d8.gif"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\9e2def7e-f035-41f3-ae71-1a265ef2b289.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/9e2def7e-f035-41f3-ae71-1a265ef2b289#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ex9l951xoo",
+      "Integrity": "glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9e2def7e-f035-41f3-ae71-1a265ef2b289.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\a19127fa-6e47-49e0-9d18-8f6058c26330.gif",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/a19127fa-6e47-49e0-9d18-8f6058c26330#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "is8cfpzeio",
+      "Integrity": "fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a19127fa-6e47-49e0-9d18-8f6058c26330.gif"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\a62d76f6-3f8c-425f-9985-7ea0402172e2.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/a62d76f6-3f8c-425f-9985-7ea0402172e2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3n149qrwyk",
+      "Integrity": "T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a62d76f6-3f8c-425f-9985-7ea0402172e2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\af53bd1c-372b-410c-aed4-2851c3cd1b00.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/af53bd1c-372b-410c-aed4-2851c3cd1b00#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k3z63ka3tm",
+      "Integrity": "MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\af53bd1c-372b-410c-aed4-2851c3cd1b00.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/b27efbe0-77b5-4a81-8849-0b4552d705a9#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ben3n0cg53",
+      "Integrity": "M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/bdc61b2e-bc0d-47f8-8189-409bbe6561bb#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3ywpvnj9x4",
+      "Integrity": "9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp"
+    },
+    {
+      "Identity": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\c2d58179-a5ab-40c5-8798-a4c7ee0ed49a.jpg",
+      "SourceId": "LibraryAPI_2025",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI_2025",
+      "RelativePath": "uploads/c2d58179-a5ab-40c5-8798-a4c7ee0ed49a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2afdjztz5f",
+      "Integrity": "ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\c2d58179-a5ab-40c5-8798-a4c7ee0ed49a.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "mods/1_16_1_forge_019c1e7b.mng4n5rhjf.rar",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1_forge_019c1e7b.rar",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1984543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mng4n5rhjf"
+        },
+        {
+          "Name": "label",
+          "Value": "mods/1_16_1_forge_019c1e7b.rar"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_16_1_forge_019c1e7b.rar",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1_forge_019c1e7b.rar",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1984543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rjeCOsKe2XjHtgeoRe2vCe+zjOerf73qqkrh8WNGtT4="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_16_1-1_15_1_neoforge_019c1f5e.azdos9yuv8.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1-1_15_1_neoforge_019c1f5e.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29910989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "azdos9yuv8"
+        },
+        {
+          "Name": "label",
+          "Value": "mods/1_16_1-1_15_1_neoforge_019c1f5e.zip"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_16_1-1_15_1_neoforge_019c1f5e.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_16_1-1_15_1_neoforge_019c1f5e.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29910989"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OqNmkXaVL4rikFkC3VxgzitgD7a6/D+lK1zymEbhKeI="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_18_1-1_17_1_forge_019c1f5e.valbcfms6d.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_1-1_17_1_forge_019c1f5e.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "149965"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "valbcfms6d"
+        },
+        {
+          "Name": "label",
+          "Value": "mods/1_18_1-1_17_1_forge_019c1f5e.zip"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_18_1-1_17_1_forge_019c1f5e.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_1-1_17_1_forge_019c1f5e.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "149965"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aTeA/NyPETLU4IDAbPKYNY5Utdyy3HX6iIOiYrNZyf8="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_18_2_fabric_019cd67e.ih8s66tipq.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_2_fabric_019cd67e.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25027641"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cvhr0e7QqZ+TXODhajr/dKechtdXpUhKf4WwQ23AKO4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Mar 2026 06:46:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ih8s66tipq"
+        },
+        {
+          "Name": "label",
+          "Value": "mods/1_18_2_fabric_019cd67e.zip"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cvhr0e7QqZ+TXODhajr/dKechtdXpUhKf4WwQ23AKO4="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_18_2_fabric_019cd67e.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_2_fabric_019cd67e.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25027641"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cvhr0e7QqZ+TXODhajr/dKechtdXpUhKf4WwQ23AKO4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Mar 2026 06:46:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cvhr0e7QqZ+TXODhajr/dKechtdXpUhKf4WwQ23AKO4="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_18_2_forge-fabric_019cd6bf.s7e08r65a1.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_2_forge-fabric_019cd6bf.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2017944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Mar 2026 08:04:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s7e08r65a1"
+        },
+        {
+          "Name": "label",
+          "Value": "mods/1_18_2_forge-fabric_019cd6bf.zip"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_18_2_forge-fabric_019cd6bf.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_18_2_forge-fabric_019cd6bf.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2017944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Mar 2026 08:04:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_19_0_neoforge_019cd1f6.s7e08r65a1.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_19_0_neoforge_019cd1f6.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2017944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Mar 2026 09:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s7e08r65a1"
+        },
+        {
+          "Name": "label",
+          "Value": "mods/1_19_0_neoforge_019cd1f6.zip"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_19_0_neoforge_019cd1f6.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_19_0_neoforge_019cd1f6.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2017944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Mar 2026 09:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_20_1_fabric_019c6adf.s7e08r65a1.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_20_1_fabric_019c6adf.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2017944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 09:12:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s7e08r65a1"
+        },
+        {
+          "Name": "label",
+          "Value": "mods/1_20_1_fabric_019c6adf.zip"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w="
+        }
+      ]
+    },
+    {
+      "Route": "mods/1_20_1_fabric_019c6adf.zip",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\mods\\1_20_1_fabric_019c6adf.zip",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2017944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-zip-compressed"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 09:12:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+DtsT+XCGgU3ZUnaO9fBDKa6ImyBB6giRnFH8WhN56w="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1925-48bc-780c-b069-2f5d8e206d40.hcl0bled11.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hcl0bled11"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1925-48bc-780c-b069-2f5d8e206d40.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c193f-9548-760b-afb9-54d3f4ab9096.k372kpvczu.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c193f-9548-760b-afb9-54d3f4ab9096.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1644628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k372kpvczu"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019c193f-9548-760b-afb9-54d3f4ab9096.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c193f-9548-760b-afb9-54d3f4ab9096.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c193f-9548-760b-afb9-54d3f4ab9096.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1644628"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kOcarW+oejiKcJEqQJFY7BR6viZqbooTAfmVBwSIBgs="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c194c-2057-7d3f-b3a2-591137a62753.w0ow0h5xea.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c194c-2057-7d3f-b3a2-591137a62753.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w0ow0h5xea"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019c194c-2057-7d3f-b3a2-591137a62753.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c194c-2057-7d3f-b3a2-591137a62753.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c194c-2057-7d3f-b3a2-591137a62753.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YEo8HyXkF4KjmZpJXbxzZpIE0lUa2PEdROOyO4WWtuU="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1e1b-92ba-708c-8ab9-2696a4da8037.k3z63ka3tm.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k3z63ka3tm"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e1b-92ba-708c-8ab9-2696a4da8037.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1e79-6690-7c58-848d-87a3f4825a59.2bktwvianj.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2bktwvianj"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e79-6690-7c58-848d-87a3f4825a59.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8lfs0EFvEXThQw1wfgkIeTIVFSRrfyx9DFBL6xDRvO8="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.zsv2dtiz2f.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "114304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zsv2dtiz2f"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019c1e7b-f102-77e8-bd31-f5ab7d6d81b0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g65ziZIqHOIIah3w4UwSrO1dtAkcUu12jN8z7HGerZM="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.5hmd9q845x.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115099"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5hmd9q845x"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c1f5e-6a5a-7a81-b455-ecdff2cace99.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115099"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-93uQo0cixcjaBOWqQcSVVZAaTudSJBRhTBQy57gHSSs="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c6adf-a1cb-71f8-b939-57f875251474.2afdjztz5f.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c6adf-a1cb-71f8-b939-57f875251474.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "295870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Mar 2026 07:01:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2afdjztz5f"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019c6adf-a1cb-71f8-b939-57f875251474.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019c6adf-a1cb-71f8-b939-57f875251474.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019c6adf-a1cb-71f8-b939-57f875251474.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "295870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Mar 2026 07:01:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019cd1f6-f6ed-70d5-a9ac-d2f6ea985312.3n149qrwyk.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019cd1f6-f6ed-70d5-a9ac-d2f6ea985312.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Mar 2026 09:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3n149qrwyk"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/1_019cd1f6-f6ed-70d5-a9ac-d2f6ea985312.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/1_019cd1f6-f6ed-70d5-a9ac-d2f6ea985312.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\1_019cd1f6-f6ed-70d5-a9ac-d2f6ea985312.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Mar 2026 09:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c1925-48bc-780c-b069-2f5d8e206d40.v6nl2ujq32.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1925-48bc-780c-b069-2f5d8e206d40.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v6nl2ujq32"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/2_019c1925-48bc-780c-b069-2f5d8e206d40.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c1925-48bc-780c-b069-2f5d8e206d40.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1925-48bc-780c-b069-2f5d8e206d40.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p5Kdos8vyfwSKp0mxIxJGrO13e8a8wDDp0HfMrt4AC4="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c194c-2057-7d3f-b3a2-591137a62753.2hh2x4br7h.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c194c-2057-7d3f-b3a2-591137a62753.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136191"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2hh2x4br7h"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/2_019c194c-2057-7d3f-b3a2-591137a62753.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c194c-2057-7d3f-b3a2-591137a62753.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c194c-2057-7d3f-b3a2-591137a62753.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136191"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cnr0hRknFQabBoHwFvW1GCeLQpt19e946s86IDSzHrk="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93020"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c1e1b-92ba-708c-8ab9-2696a4da8037.w80dlvw2p5.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93020"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w80dlvw2p5"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/2_019c1e1b-92ba-708c-8ab9-2696a4da8037.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gNO4SOkkiTYGoXo6MR3B7wUlf8URQW0E0axai5JZvCE="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c1e79-6690-7c58-848d-87a3f4825a59.are0chxp46.jpeg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "810253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "are0chxp46"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1e79-6690-7c58-848d-87a3f4825a59.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "810253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tgoaXqg5Z0YRi9Sgcjr9qEFtJjKtdqSlvKhhfZBEezY="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.rfd9o2yrbb.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rfd9o2yrbb"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c1f5e-6a5a-7a81-b455-ecdff2cace99.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48368"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R+yauO4Q4B4m4LJzSvrgsyZM/9OUDCl+fBahA+9aA/s="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c6adf-a1cb-71f8-b939-57f875251474.im2asyg67e.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c6adf-a1cb-71f8-b939-57f875251474.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "296313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NvA7LFangK7Ylj86XH39kt8iWr4PQLf0VaRxGlHwk6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Mar 2026 07:01:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "im2asyg67e"
+        },
+        {
+          "Name": "label",
+          "Value": "modsGallery/2_019c6adf-a1cb-71f8-b939-57f875251474.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NvA7LFangK7Ylj86XH39kt8iWr4PQLf0VaRxGlHwk6w="
+        }
+      ]
+    },
+    {
+      "Route": "modsGallery/2_019c6adf-a1cb-71f8-b939-57f875251474.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\modsGallery\\2_019c6adf-a1cb-71f8-b939-57f875251474.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "296313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NvA7LFangK7Ylj86XH39kt8iWr4PQLf0VaRxGlHwk6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Mar 2026 07:01:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NvA7LFangK7Ylj86XH39kt8iWr4PQLf0VaRxGlHwk6w="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/04516dad-53f9-4481-b643-9bd854f09867.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\04516dad-53f9-4481-b643-9bd854f09867.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/04516dad-53f9-4481-b643-9bd854f09867.y7rflja6eg.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\04516dad-53f9-4481-b643-9bd854f09867.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y7rflja6eg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/04516dad-53f9-4481-b643-9bd854f09867.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ckdmxCf4Z0iTOBVk2aKsxEyK/lY9o48aCVYc/N6GdIM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/296419fa-d118-4a02-88c4-846bc4da709c.9ggei1k5cp.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\296419fa-d118-4a02-88c4-846bc4da709c.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ggei1k5cp"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/296419fa-d118-4a02-88c4-846bc4da709c.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/296419fa-d118-4a02-88c4-846bc4da709c.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\296419fa-d118-4a02-88c4-846bc4da709c.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ycCGN4E76lwyMvBUA2xinFTNfqCA/DgB3zdLuFlQs5A="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/4f72caa2-ca9d-4dae-8618-b7c73417310b.hcl0bled11.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hcl0bled11"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\4f72caa2-ca9d-4dae-8618-b7c73417310b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EetKOkNScLAMKjGuXLHg00xFkx387a/opK9j4ZVo7cU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/55d6e64a-2bc5-4af7-a0fb-9966ca2531d8.gif",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\55d6e64a-2bc5-4af7-a0fb-9966ca2531d8.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "999700"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Mar 2026 06:45:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/55d6e64a-2bc5-4af7-a0fb-9966ca2531d8.is8cfpzeio.gif",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\55d6e64a-2bc5-4af7-a0fb-9966ca2531d8.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "999700"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Mar 2026 06:45:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "is8cfpzeio"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/55d6e64a-2bc5-4af7-a0fb-9966ca2531d8.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9e2def7e-f035-41f3-ae71-1a265ef2b289.ex9l951xoo.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\9e2def7e-f035-41f3-ae71-1a265ef2b289.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38762"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ex9l951xoo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9e2def7e-f035-41f3-ae71-1a265ef2b289.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9e2def7e-f035-41f3-ae71-1a265ef2b289.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\9e2def7e-f035-41f3-ae71-1a265ef2b289.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38762"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-glJY0rDHgw1BGedlVr//+upoWwr4c/B5/sjbBky1OEg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a19127fa-6e47-49e0-9d18-8f6058c26330.gif",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\a19127fa-6e47-49e0-9d18-8f6058c26330.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "999700"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Mar 2026 06:46:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a19127fa-6e47-49e0-9d18-8f6058c26330.is8cfpzeio.gif",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\a19127fa-6e47-49e0-9d18-8f6058c26330.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "999700"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Mar 2026 06:46:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "is8cfpzeio"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a19127fa-6e47-49e0-9d18-8f6058c26330.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fiXkWeUBCxCSFGESl9eUiihJS5mL5sqFvLIri5Eukfg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a62d76f6-3f8c-425f-9985-7ea0402172e2.3n149qrwyk.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\a62d76f6-3f8c-425f-9985-7ea0402172e2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Mar 2026 09:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3n149qrwyk"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a62d76f6-3f8c-425f-9985-7ea0402172e2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a62d76f6-3f8c-425f-9985-7ea0402172e2.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\a62d76f6-3f8c-425f-9985-7ea0402172e2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Mar 2026 09:39:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T+JeOztzLPIe346MM5f95BoR5TxA8vTOVHPF+MB63ok="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/af53bd1c-372b-410c-aed4-2851c3cd1b00.k3z63ka3tm.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\af53bd1c-372b-410c-aed4-2851c3cd1b00.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k3z63ka3tm"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/af53bd1c-372b-410c-aed4-2851c3cd1b00.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/af53bd1c-372b-410c-aed4-2851c3cd1b00.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\af53bd1c-372b-410c-aed4-2851c3cd1b00.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MApdLASQZKks0BhDTCtQAyHq8qivGFKXMnzdEJyx3Bc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b27efbe0-77b5-4a81-8849-0b4552d705a9.ben3n0cg53.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ben3n0cg53"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\b27efbe0-77b5-4a81-8849-0b4552d705a9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "87195"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M9DZKizP07wW34VooM4oDDUwjjFIHL8CrK8sgv50zEM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bdc61b2e-bc0d-47f8-8189-409bbe6561bb.3ywpvnj9x4.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3ywpvnj9x4"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\bdc61b2e-bc0d-47f8-8189-409bbe6561bb.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "43448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 05:55:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9eGeAsT3qc2TsQdDmfif9BM7Bd0A5Hwpwjgg8Ksdovg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c2d58179-a5ab-40c5-8798-a4c7ee0ed49a.2afdjztz5f.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\c2d58179-a5ab-40c5-8798-a4c7ee0ed49a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "295870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 09:12:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2afdjztz5f"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/c2d58179-a5ab-40c5-8798-a4c7ee0ed49a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c2d58179-a5ab-40c5-8798-a4c7ee0ed49a.jpg",
+      "AssetFile": "C:\\Users\\kapi\\Desktop\\диплом\\minecratModManager\\minecraftModManager\\minecraft_mods\\LibraryAPI_2025\\wwwroot\\uploads\\c2d58179-a5ab-40c5-8798-a4c7ee0ed49a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "295870"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 17 Feb 2026 09:12:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZoIyTwA02/OTSCtv3ZxeyebBNHCyeAnCYPm1yS7SXGo="
+        }
+      ]
+    }
+  ]
+}
